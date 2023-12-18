@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>src/bond/bond_order_determination.h</itemPath>
+      <itemPath>src/scoring_function/constants.h</itemPath>
+      <itemPath>../openbabel/elements.h</itemPath>
+      <itemPath>../openbabel/elementtable.h</itemPath>
+      <itemPath>src/model/exception.h</itemPath>
+      <itemPath>src/empirical-docking/fast_gradient.h</itemPath>
+      <itemPath>src/scoring_function/features.h</itemPath>
+      <itemPath>src/empirical-docking/global_optimizer.h</itemPath>
+      <itemPath>src/interface/hess.h</itemPath>
+      <itemPath>src/empirical-docking/ils_primitives.h</itemPath>
+      <itemPath>src/model/logger.h</itemPath>
+      <itemPath>src/empirical-docking/matrix4.h</itemPath>
+      <itemPath>src/model/molecule.h</itemPath>
+      <itemPath>src/empirical-docking/optimizable_molecule.h</itemPath>
+      <itemPath>src/empirical-docking/optimization_methods.h</itemPath>
+      <itemPath>src/parser/parser.h</itemPath>
+      <itemPath>src/scoring_function/scoring.h</itemPath>
+      <itemPath>src/model/simplified_tree.h</itemPath>
+      <itemPath>src/empirical-docking/transformation.h</itemPath>
+      <itemPath>src/model/vector3.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>src/bond/connectivity.cpp</itemPath>
+      <itemPath>../openbabel/elements.cpp</itemPath>
+      <itemPath>src/empirical-docking/fast_gradient_upd.cpp</itemPath>
+      <itemPath>src/scoring_function/features.cpp</itemPath>
+      <itemPath>src/empirical-docking/find_ligand_pairs.cpp</itemPath>
+      <itemPath>src/bond/functional_groups.cpp</itemPath>
+      <itemPath>src/empirical-docking/global_optimizer.cpp</itemPath>
+      <itemPath>src/bond/hybridization.cpp</itemPath>
+      <itemPath>src/empirical-docking/ils_primitives.cpp</itemPath>
+      <itemPath>src/empirical-docking/ils_random.cpp</itemPath>
+      <itemPath>src/interface/interface.cpp</itemPath>
+      <itemPath>src/model/logger.cpp</itemPath>
+      <itemPath>src/empirical-docking/matrix4.cpp</itemPath>
+      <itemPath>src/model/molecule.cpp</itemPath>
+      <itemPath>src/empirical-docking/monte_carlo_entropy.cpp</itemPath>
+      <itemPath>src/empirical-docking/optimizable_molecule.cpp</itemPath>
+      <itemPath>src/empirical-docking/optimization_methods.cpp</itemPath>
+      <itemPath>src/parser/parser.cpp</itemPath>
+      <itemPath>src/model/ph_transformers.cpp</itemPath>
+      <itemPath>src/bond/ring_operations.cpp</itemPath>
+      <itemPath>src/scoring_function/scoring.cpp</itemPath>
+      <itemPath>src/empirical-docking/transform_ph.cpp</itemPath>
+      <itemPath>src/model/vector3.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../Indigo</Elem>
+    <Elem>../Indigo</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>gcc</commandlineTool>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>src/interface</pElem>
+            <pElem>src/bond</pElem>
+            <pElem>src/model</pElem>
+            <pElem>src/empirical-docking</pElem>
+            <pElem>../openbabel</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../lbfgspp</pElem>
+            <pElem>../indigo/Indigo/api/cpp/src</pElem>
+            <pElem>../indigo/Indigo/api/c/bingo-nosql</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-inchi</pElem>
+          </incDir>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../openbabel/elements.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../openbabel/elements.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../openbabel/elementtable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bond/bond_order_determination.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/bond/connectivity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/functional_groups.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/hybridization.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/ring_operations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/fast_gradient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/fast_gradient_upd.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/find_ligand_pairs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/global_optimizer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/global_optimizer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_primitives.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_primitives.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_random.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/matrix4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/matrix4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/monte_carlo_entropy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimizable_molecule.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimizable_molecule.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimization_methods.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimization_methods.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/transform_ph.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/transformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/interface/hess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interface/interface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/exception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/molecule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/molecule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/ph_transformers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/simplified_tree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/vector3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/vector3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/parser/parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/parser/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/features.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/scoring_function/features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/scoring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/scoring_function/scoring.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>src</pElem>
+            <pElem>src/interface</pElem>
+            <pElem>src/bond</pElem>
+            <pElem>src/model</pElem>
+            <pElem>src/empirical-docking</pElem>
+            <pElem>../openbabel</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../lbfgspp</pElem>
+            <pElem>../indigo/Indigo/api/cpp/src</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-inchi</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
+            <pElem>../indigo/Indigo/api/c/bingo-nosql</pElem>
+          </incDir>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../openbabel/elements.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../openbabel/elements.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../openbabel/elementtable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bond/bond_order_determination.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/bond/connectivity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/functional_groups.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/hybridization.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bond/ring_operations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/fast_gradient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/fast_gradient_upd.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/find_ligand_pairs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/global_optimizer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/global_optimizer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_primitives.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_primitives.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/ils_random.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/matrix4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/matrix4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/empirical-docking/monte_carlo_entropy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimizable_molecule.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimizable_molecule.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimization_methods.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/optimization_methods.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/transform_ph.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/empirical-docking/transformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/interface/hess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interface/interface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/exception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/logger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/molecule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/molecule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/ph_transformers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/simplified_tree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/model/vector3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/model/vector3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/parser/parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/parser/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/features.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/scoring_function/features.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/scoring_function/scoring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/scoring_function/scoring.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

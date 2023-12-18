@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>gcc</commandlineTool>
+          <incDir>
+            <pElem>../hess-base/src/parser</pElem>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../Indigo/api/c/indigo</pElem>
+            <pElem>../Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../Indigo/third_party/rapidjson</pElem>
+            <pElem>../Indigo/third_party/tinyxml2</pElem>
+            <pElem>../Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../Indigo/third_party/cppcodec</pElem>
+            <pElem>../Indigo/core/indigo-core</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../Indigo/core/indigo-core/common</pElem>
+            <pElem>../Indigo</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>TARGET_API_LIB</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../Indigo/third_party/tinyxml2</pElem>
+            <pElem>../Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../Indigo/third_party/rapidjson</pElem>
+            <pElem>../Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../Indigo/third_party/cppcodec</pElem>
+            <pElem>../Indigo/core/indigo-core/common</pElem>
+            <pElem>../Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../Indigo/core/indigo-core</pElem>
+            <pElem>../Indigo</pElem>
+            <pElem>../Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/api/cpp/src</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-inchi</pElem>
+            <pElem>../indigo/Indigo/api/c/bingo-nosql</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>TARGET_API_LIB</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-base"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../hess-base"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-base.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../indigo"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../indigo"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libindigo.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DataCompression</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../Indigo/third_party/tinyxml2</pElem>
+            <pElem>../Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../Indigo/third_party/rapidjson</pElem>
+            <pElem>../Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../Indigo/third_party/cppcodec</pElem>
+            <pElem>../Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../Indigo/core/indigo-core</pElem>
+            <pElem>../Indigo/core/indigo-core/common</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../Indigo</pElem>
+            <pElem>../Indigo/core/indigo-core</pElem>
+            <pElem>../Indigo/api/c/indigo</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>TARGET_API_LIB</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../Indigo/third_party/tinyxml2</pElem>
+            <pElem>../Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../Indigo/third_party/rapidjson</pElem>
+            <pElem>../Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../Indigo/third_party/cppcodec</pElem>
+            <pElem>../Indigo/core/indigo-core/common</pElem>
+            <pElem>../Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../Indigo/core/indigo-core</pElem>
+            <pElem>../Indigo</pElem>
+            <pElem>../Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/api/cpp/src</pElem>
+            <pElem>../indigo/Indigo/api/cpp</pElem>
+            <pElem>../indigo/Indigo/api</pElem>
+            <pElem>../indigo/Indigo/api/c/bingo-nosql</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-inchi</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
+            <pElem>../indigo/Indigo/api/cpp/src</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>TARGET_API_LIB</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-base"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../hess-base"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-base.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../indigo"
+                            CT="3"
+                            CN="Release"
+                            AC="false"
+                            BL="true"
+                            WD="../indigo"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libindigo.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DataCompression</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
