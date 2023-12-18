@@ -1,3 +1,6 @@
 [submodule "Indigo"]
 	path = indigo/Indigo
 	url = https://github.com/epam/Indigo
+[submodule "indigo/Indigo"]
+	path = indigo/Indigo
+	url = https://github.com/epam/Indigo
