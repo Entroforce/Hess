@@ -524,6 +524,8 @@
             <itemPath>Indigo/core/indigo-core/molecule/src/molecule_tgroups.cpp</itemPath>
             <itemPath>Indigo/core/indigo-core/molecule/src/molfile_loader.cpp</itemPath>
             <itemPath>Indigo/core/indigo-core/molecule/src/molfile_saver.cpp</itemPath>
+            <itemPath>Indigo/core/indigo-core/molecule/src/monomer_commons.cpp</itemPath>
+            <itemPath>Indigo/core/indigo-core/molecule/src/monomers_lib.cpp</itemPath>
             <itemPath>Indigo/core/indigo-core/molecule/src/multiple_cdx_loader.cpp</itemPath>
             <itemPath>Indigo/core/indigo-core/molecule/src/multiple_cml_loader.cpp</itemPath>
             <itemPath>Indigo/core/indigo-core/molecule/src/parse_utils.cpp</itemPath>
@@ -797,6 +799,7 @@
           </preprocessorList>
         </cTool>
         <ccTool>
+          <stripSymbols>true</stripSymbols>
           <incDir>
             <pElem>Indigo/third_party/object_threadsafe</pElem>
             <pElem>Indigo/third_party/tinyxml2</pElem>
@@ -812,6 +815,7 @@
             <pElem>Indigo/third_party/inchi/INCHI_BASE/src</pElem>
             <pElem>Indigo/third_party/cppcodec</pElem>
           </incDir>
+          <commandLine>-std=c++17</commandLine>
           <preprocessorList>
             <Elem>TARGET_API_LIB</Elem>
           </preprocessorList>
@@ -2978,6 +2982,16 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="Indigo/core/indigo-core/molecule/src/monomer_commons.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Indigo/core/indigo-core/molecule/src/monomers_lib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="Indigo/core/indigo-core/molecule/src/multiple_cdx_loader.cpp"
             ex="false"
             tool="1"
@@ -4207,6 +4221,7 @@
             <pElem>Indigo/api/cpp/src</pElem>
             <pElem>Indigo/third_party/inchi/INCHI_BASE/src</pElem>
           </incDir>
+          <commandLine>-std=c++17</commandLine>
           <preprocessorList>
             <Elem>TARGET_API_LIB</Elem>
           </preprocessorList>
@@ -6375,6 +6390,16 @@
             flavor2="0">
       </item>
       <item path="Indigo/core/indigo-core/molecule/src/molfile_saver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Indigo/core/indigo-core/molecule/src/monomer_commons.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Indigo/core/indigo-core/molecule/src/monomers_lib.cpp"
             ex="false"
             tool="1"
             flavor2="0">

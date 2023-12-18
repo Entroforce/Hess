@@ -225,6 +225,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/molecule_tgroups.o \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/molfile_loader.o \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/molfile_saver.o \
+	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomer_commons.o \
+	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomers_lib.o \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/multiple_cdx_loader.o \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/multiple_cml_loader.o \
 	${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/parse_utils.o \
@@ -323,8 +325,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-std=c++17
+CXXFLAGS=-std=c++17
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -1294,6 +1296,16 @@ ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/molfile_saver.o: Indigo/core/i
 	${MKDIR} -p ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O3 -DTARGET_API_LIB -IIndigo/third_party/object_threadsafe -IIndigo/third_party/tinyxml2 -IIndigo/third_party/rapidjson -IIndigo/core/indigo-core/common -IIndigo/core/indigo-core/molecule -IIndigo/core/indigo-core/common/base_c -IIndigo/core/indigo-core/common/base_cpp -IIndigo/core/indigo-core -IIndigo/api/c/indigo -IIndigo/third_party/cppcodec/cppcodec -IIndigo/third_party/cppcodec -IIndigo/api/cpp -IIndigo/api/cpp/src -IIndigo/third_party/inchi/INCHI_BASE/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/molfile_saver.o Indigo/core/indigo-core/molecule/src/molfile_saver.cpp
+
+${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomer_commons.o: Indigo/core/indigo-core/molecule/src/monomer_commons.cpp
+	${MKDIR} -p ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -DTARGET_API_LIB -IIndigo/third_party/object_threadsafe -IIndigo/third_party/tinyxml2 -IIndigo/third_party/rapidjson -IIndigo/core/indigo-core/common -IIndigo/core/indigo-core/molecule -IIndigo/core/indigo-core/common/base_c -IIndigo/core/indigo-core/common/base_cpp -IIndigo/core/indigo-core -IIndigo/api/c/indigo -IIndigo/third_party/cppcodec/cppcodec -IIndigo/third_party/cppcodec -IIndigo/api/cpp -IIndigo/api/cpp/src -IIndigo/third_party/inchi/INCHI_BASE/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomer_commons.o Indigo/core/indigo-core/molecule/src/monomer_commons.cpp
+
+${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomers_lib.o: Indigo/core/indigo-core/molecule/src/monomers_lib.cpp
+	${MKDIR} -p ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -DTARGET_API_LIB -IIndigo/third_party/object_threadsafe -IIndigo/third_party/tinyxml2 -IIndigo/third_party/rapidjson -IIndigo/core/indigo-core/common -IIndigo/core/indigo-core/molecule -IIndigo/core/indigo-core/common/base_c -IIndigo/core/indigo-core/common/base_cpp -IIndigo/core/indigo-core -IIndigo/api/c/indigo -IIndigo/third_party/cppcodec/cppcodec -IIndigo/third_party/cppcodec -IIndigo/api/cpp -IIndigo/api/cpp/src -IIndigo/third_party/inchi/INCHI_BASE/src -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/monomers_lib.o Indigo/core/indigo-core/molecule/src/monomers_lib.cpp
 
 ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src/multiple_cdx_loader.o: Indigo/core/indigo-core/molecule/src/multiple_cdx_loader.cpp
 	${MKDIR} -p ${OBJECTDIR}/Indigo/core/indigo-core/molecule/src
