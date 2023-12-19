@@ -39,14 +39,16 @@ Run `./setup.sh`
 `--size_z arg`                  size in the Z dimension (Angstroms) <br/>
 
 **Minimization options:** <br/>
-`--optimize arg`                parameter for the global search algorithm (`mc` for Monte Carlo optimization or `mc_metropolis` for Monte Carlo with Metropolis criterion) <br/>
-`--top arg`                     number of top scores <br/>
-`--depth arg`                   search depth ( number of LBFGS local search runs) <br/>
-`--granularity arg`             grid splitting coefficient (the smaller the better the approximation of the estimation function) <br/>
+`--optimize arg`                global search algorithm variant (`mc` for Monte Carlo optimization or `mc_metropolis` for Monte Carlo with Metropolis criterion) <br/>
+`--top arg`                     number of top scored poses stred in the output<br/>
+`--depth arg`                   search depth (number of LBFGS local search runs) <br/>
+`--granularity arg`             grid granularity (the smaller, the better the approximation) <br/>
 `--score_only`                  score provided ligand pose <br/>
-`--grid_deriv`                  use a grid with previous calculation of function gradients <br/>
+`--grid_deriv`                  use a grid with precalculated gradients <br/>
+
 **Output:**  <br/>
-`-o arg`                        output file name, `sdf` format is used <br/>
+`-o arg`                        output file name (`sdf`)<br/>
+
 **Misc:** <br/>
 `--seed arg`                    explicit random seed <br/>
 
