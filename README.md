@@ -1,10 +1,10 @@
 # Hess
 
 Hess is a platform for computational chemistry. This public version of
-the platform provides functionality for molecular docking. It uses
-BFGS for local optimization and two different forms of Monte Carlo
-method for global optimization. The Vinardo scoring function is used
-for energy estimation.
+the platform provides functionality for empirical molecular docking.
+It uses BFGS for local optimization and two different forms of Monte
+Carlo method for global optimization. The Vinardo scoring function is
+used for energy estimation.
 
 ## Prerequisities
 
@@ -29,6 +29,7 @@ Run `./setup.sh`
 `-r [--receptor ] arg`          path to the receptor molecule<br/>
 `-l [ --ligand ] arg`           path to the ligand molecule <br/>
 `--autobox_ligand arg`          ligand to use for autobox <br/>
+
 **Search space:** <br/>
 `--center_x arg`                X coordinate of the center <br/>
 `--center_x arg`                Y coordinate of the center <br/>
@@ -36,8 +37,9 @@ Run `./setup.sh`
 `--size_x arg`                  size in the X dimension (Angstroms) <br/>
 `--size_y arg`                  size in the Y dimension (Angstroms) <br/>
 `--size_z arg`                  size in the Z dimension (Angstroms) <br/>
+
 **Minimization options:** <br/>
-`--optimize arg`                parameter for the global search algorithm (`mc` for Monte Carlo optimisation or `mc_metropolis` for Monte Carlo with Metropolis criterio) <br/>
+`--optimize arg`                parameter for the global search algorithm (`mc` for Monte Carlo optimization or `mc_metropolis` for Monte Carlo with Metropolis criterion) <br/>
 `--top arg`                     number of top scores <br/>
 `--depth arg`                   search depth ( number of LBFGS local search runs) <br/>
 `--granularity arg`             grid splitting coefficient (the smaller the better the approximation of the estimation function) <br/>
