@@ -20,7 +20,6 @@
 
 #include "optimizable_molecule.h"
 
-bool check_conf(hess::Molecule *lig, simplified_tree& tr, const vector<int>& encoding_inv, const Eigen::VectorXd& x);
 bool check_exceeded_box_limits(hess::Molecule *lig, double size_x, double size_y, double size_z, simplified_tree& tr, int& ex_count, const vector<int>& encoding_inv, const Eigen::VectorXd& x);
 bool check_exceeded_box_limits_start(hess::Molecule *lig, double size_x, double size_y, double size_z, simplified_tree& tr, int& ex_count, const vector<int>& encoding_inv, const Eigen::VectorXd& x);
 Eigen::VectorXd ils_random(Optimizable_molecule& mol, int depth, double dif);

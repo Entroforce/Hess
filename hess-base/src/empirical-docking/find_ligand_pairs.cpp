@@ -64,9 +64,8 @@ void calc_distances(vector<int> &d, hess::Molecule *lig, int start_id, vector <i
     iters = 0;
     while (end != start_id) {
       iters++;
-      ver atom_ver = lig->getVertex(end);
-      for (int id = atom_ver.neiBegin(); id != atom_ver.neiEnd(); id = atom_ver.neiNext(id)) {
-        int nei_id = atom_ver.neiVertex(id);
+      for (int id = lig->getVertex(end).neiBegin(); id != lig->getVertex(end).neiEnd();) {
+        int nei_id = lig->getVertex(end).neiVertex(id);
         int temp = w - 1;
         if (temp == d[nei_id]) {
           hess::Bond* bond = lig->get_bond(lig->findEdgeIndex(end, nei_id));
@@ -76,7 +75,9 @@ void calc_distances(vector<int> &d, hess::Molecule *lig, int start_id, vector <i
           }
           w = temp;
           end = nei_id;
-          break;
+        }
+        else {
+            id = lig->getVertex(end).neiNext(id);
         }
       }
       if (was_rot)

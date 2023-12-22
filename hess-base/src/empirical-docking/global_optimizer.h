@@ -25,7 +25,6 @@ vector <double> calc_autobox(hess::Molecule *ligand);
 void set_insubtree(hess::Molecule* lig);
 void calc_center_mass_frag(hess::Molecule *pd, simplified_tree &tr, int v, int& count, hess::Vec3d& average);
 void set_parents_to_tree(hess::Molecule* lig);
-void calc_global_shifts(vector<vector<double>>&global_shifts, Optimizable_molecule& mol, int niter);
 void form_ils_results(vector<pair<Eigen::VectorXd, pair<double, double>>>& result_pairs_sort, Optimizable_molecule* opt);
 pair<double, double> calc_energy_for_result(hess::Molecule *lig, hess::Molecule *prot, simplified_tree &tr, ConfIndependentInputs& in, const vector<int>& encoding_inv, const Eigen::VectorXd& x, const char* scoring);
 double calc_energy(hess::Molecule *lig, hess::Molecule *prod, ConfIndependentInputs& in, const char* scoring);

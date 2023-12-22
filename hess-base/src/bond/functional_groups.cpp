@@ -229,7 +229,6 @@ void assign_functional_group_bonds(const vector <FGroup>& groups, hess::Molecule
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -266,7 +265,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -298,7 +296,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -328,7 +325,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -365,7 +361,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -405,7 +400,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);
@@ -438,7 +432,6 @@ void functional_groups(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     MoleculeSubstructureMatcher matcher(molcopy);

@@ -83,83 +83,6 @@ void move_ligand_to_center(double* ligand_center, hess::Molecule *ligand) {
   }
 }
 
-void move_box(vector<double>& box, double x_diff, double y_diff, double z_diff) {
-  box[0] = x_diff;
-  box[1] = y_diff;
-  box[2] = z_diff;
-}
-
-void calc_global_shifts(vector<vector<double>>&global_shifts, Optimizable_molecule& mol, int niter) {
-  double size_x = mol.size_x;
-  double size_y = mol.size_y;
-  double size_z = mol.size_z;
-  double lig_box_size_x = mol.ligand_box[0] + mol.ligand_box[1];
-  double lig_box_size_y = mol.ligand_box[2] + mol.ligand_box[3];
-  double lig_box_size_z = mol.ligand_box[4] + mol.ligand_box[5];
-  double lx = mol.ligand_box[0];
-  double rx = mol.ligand_box[1];
-  double ly = mol.ligand_box[2];
-  double ry = mol.ligand_box[3];
-  double lz = mol.ligand_box[4];
-  double rz = mol.ligand_box[5];
-  if (lig_box_size_x >= size_x) {
-    if (lx >= size_x / 2) {
-      lx = size_x / 4;
-    }
-    if (rx >= size_x / 2) {
-      rx = size_x / 4;
-    }
-  }
-  if (lig_box_size_y >= size_y) {
-    if (ly >= size_y / 2) {
-      ly = size_y / 4;
-    }
-    if (ry >= size_y / 2) {
-      ry = size_y / 4;
-    }
-  }
-  if (lig_box_size_z >= size_z) {
-    if (lz >= size_z / 2) {
-      lz = size_z / 4;
-    }
-    if (rz >= size_z / 2) {
-      rz = size_z / 4;
-    }
-  }
-  lig_box_size_x = lx + rx;
-  lig_box_size_y = ly + ry;
-  lig_box_size_z = lz + rz;
-  int STEPS_COUNT = niter;
-  double axis_steps = std::pow(STEPS_COUNT, 1.0 / 3.0);
-  vector<double> lig_center(3);
-  lig_center[0] = mol.ligand_center[0];
-  lig_center[1] = mol.ligand_center[1];
-  lig_center[2] = mol.ligand_center[2];
-  double xd = (size_x - lig_box_size_x) / axis_steps;
-  double yd = (size_y - lig_box_size_y) / axis_steps;
-  double zd = (size_z - lig_box_size_z) / axis_steps;
-  double xd_i = -size_x / 2 + lx;
-  double yd_i = -size_y / 2 + ly;
-  double zd_i = -size_z / 2 + lz;
-  int z_c = 0, y_c = 0, x_c = 0;
-  while (xd_i < size_x / 2 - rx) {
-    yd_i = -size_y / 2 + ly;
-    while (yd_i < size_y / 2 - ry) {
-      zd_i = -size_z / 2 + lz;
-      while (zd_i < size_z / 2 - rz) {
-        move_box(lig_center, xd_i, yd_i, zd_i);
-        global_shifts.push_back(lig_center);
-        zd_i += (zd);
-        z_c += 1;
-      }
-      yd_i += (yd);
-      y_c += 1;
-    }
-    xd_i += (xd);
-    x_c += 1;
-  }
-}
-
 void moveLigandToBoxCenter(double xc, double yc, double zc, void* bestmol_v) {
   hess::Molecule* bestmol = (hess::Molecule*)bestmol_v;
   for (int a_id = bestmol->vertexBegin(); a_id != bestmol->vertexEnd(); a_id = bestmol->vertexNext(a_id)) {
@@ -167,6 +90,7 @@ void moveLigandToBoxCenter(double xc, double yc, double zc, void* bestmol_v) {
     a->x += xc;
     a->y += yc;
     a->z += zc;
+    bestmol->setAtomXyz(a_id, a->x, a->y, a->z);
   }
 }
 

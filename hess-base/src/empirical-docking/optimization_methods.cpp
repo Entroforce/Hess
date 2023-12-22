@@ -57,28 +57,6 @@ double random_number_ils(double q) {
   return val * q - q / 2;
 }
 
-void random_change_type_0(VectorXd& v, VectorXd& old_v, double coef, double conr[3]) {
-  for (int i = 0; i < old_v.size() - 6; i++) {
-    double a = random_angle_ils();
-    v[i] = circlecome_ils(old_v[i], a, coef);
-  }
-  for (int i = v.size() - 6; i < v.size(); i++) {
-    v[i] = old_v[i];
-  }
-}
-
-void random_change_type_2(VectorXd& v, VectorXd& old_v, double coef, double conr[3]) {
-  int conr_id = 0;
-  for (int i = old_v.size() - 3; i < old_v.size(); i++) {
-    double a = random_number_ils(conr[conr_id]);
-    v[i] = usualcome_ils(old_v[i], a, coef);
-    conr_id++;
-  }
-  for (int i = 0; i < v.size() - 3; i++) {
-    v[i] = old_v[i];
-  }
-}
-
 void random_change(VectorXd& v, VectorXd& old_v, double coef, double conr[3]) {
   int conr_id = 0;
   for (int i = 0; i < old_v.size() - 3; i++) {
@@ -90,22 +68,6 @@ void random_change(VectorXd& v, VectorXd& old_v, double coef, double conr[3]) {
     v[i] = usualcome_ils(old_v[i], a, coef);
     conr_id++;
   }
-}
-
-int grid_encode(int a, int x, int y, int z, const int sz) {
-  int val = a;
-  val = val * (sz + 1) + x;
-  val = val * (sz + 1) + y;
-  val = val * (sz + 1) + z;
-  return val;
-}
-
-int encode(int a, int x, int y, int z, const int sz) {
-  int val = a;
-  val = val * (sz + 1) + x;
-  val = val * (sz + 1) + y;
-  val = val * (sz + 1) + z;
-  return val;
 }
 
 void calc_all_da_dalpha_type1(vector<hess::Vec3d> &da_dalpha, hess::Molecule *lig, simplified_tree& tr, const vector<int>& encoding_inv, const Eigen::VectorXd& x) {
@@ -199,37 +161,3 @@ void calc_all_da_dalpha(vector<hess::Vec3d>& da_dalpha, hess::Molecule* lig, sim
     lig->atoms[i].z = newz;
   }
 }
-
-double random_angle() {
-  double val = (rand() % 10000);
-  val /= 10000.0;
-  return val * 2.0 * M_PI;
-}
-
-double random_number(double q) {
-  double val = (rand() % 10000);
-  val /= 10000.0;
-  return val * q - q / 2;
-}
-
-double circlecome(double x, double y, double z) {
-  double val = 0;
-  if (y > x - eps) {
-    if (y - x < M_PI)
-      val = x * (1 - z) + y * z;
-    else {
-      y -= 2 * M_PI;
-      val = x * (1 - z) + y*z;
-      if (val < 0)
-        val += 2 * M_PI;
-    }
-    return val;
-  } else {
-    return circlecome(y, x, 1 - z);
-  }
-}
-
-double usualcome(double x, double y, double z) {
-  return x * (1 - z) + y*z;
-}
-

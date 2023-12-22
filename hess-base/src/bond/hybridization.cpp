@@ -129,7 +129,6 @@ void hybridize(hess::Molecule* mol) {
     indigo::Molecule molcopy;
     indigo::Array<int> molcopy_mapping;
     molcopy.clone(*mol, &molcopy_mapping);
-    molcopy.unfoldHydrogens(NULL);
     indigo::AromaticityOptions arom_opt;
     molcopy.aromatize(arom_opt);
     indigo::MoleculeSubstructureMatcher matcher(molcopy);

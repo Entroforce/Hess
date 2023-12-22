@@ -390,9 +390,6 @@ int hessRunRandomIls(int number_of_iterations, int depth, void* opt_v, double* r
 
       ils_result = ils_random(*opt, depth, dif);
 
-      if (!check_conf(ord_lig, opt->tr, opt->encoding_inv, ils_result)) {
-        fprintf(stderr, "Form changed.\n");
-      }
       pair<double, double> res = calc_energy_for_result(ord_lig, ord_rec, opt->tr, opt->in, opt->encoding_inv, ils_result, scoring_type);
       fprintf(hessGetStream(), "Iteration %3i Inter energy: %7.3f Intra energy: %7.3f Sum: %7.3f\n",
               i + 1, res.first, res.second, res.first + res.second);

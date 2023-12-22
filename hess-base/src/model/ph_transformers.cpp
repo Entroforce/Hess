@@ -101,9 +101,8 @@ void transform_Ph(hess::Molecule* mol) {
   indigo::Molecule molcopy;
   Array<int> molcopy_mapping;
   molcopy.clone(*mol, &molcopy_mapping);
-  molcopy.unfoldHydrogens(NULL);
-  AromaticityOptions arom_opt;
-  molcopy.aromatize(arom_opt);
+  indigo::AromaticityOptions arom_options(indigo::AromaticityOptions::GENERIC);
+  molcopy.aromatize(arom_options);
 
   for (PhTransform &tr : transformations) {
 
@@ -123,7 +122,6 @@ void transform_Ph(hess::Molecule* mol) {
       tr.reagents = "[#6+0](=[N+0:1])(~[N])*";
     }
 
-
     indigo::QueryMolecule qreactant, qproduct;
     {
       indigo::BufferScanner scanner(tr.reagents.c_str());
@@ -139,8 +137,11 @@ void transform_Ph(hess::Molecule* mol) {
     }
 
     int totalchg = 0;
-    for (int j = qproduct.vertexBegin(); j != qproduct.vertexEnd(); j = qproduct.vertexNext(j))
-      totalchg += qproduct.getAtomCharge(j);
+    for (int j = qproduct.vertexBegin(); j != qproduct.vertexEnd(); j = qproduct.vertexNext(j)) {
+      int charge = qproduct.getAtomCharge(j);
+      if (charge != indigo::CHARGE_UNKNOWN)
+        totalchg += charge;
+    }
 
     MoleculeSubstructureMatcher matcher(molcopy);
     matcher.setQuery(qreactant);
@@ -153,9 +154,9 @@ void transform_Ph(hess::Molecule* mol) {
       for (i = 0; i < hyb_indices.size(); i++)
         if (mol->get_atom(molcopy_mapping[matcher.getQueryMapping()[hyb_indices[i]]])->hybtype != hyb_values[i])
           break;
-      if (i != qreactant.vertexEnd())
+      if (i != hyb_indices.size())
         continue;
-
+      
       if (tr.pKa < 1e9) {
         if (totalchg > 0 && pow(10, tr.pKa - mol->pH) < 1.0)
           continue;
@@ -169,16 +170,20 @@ void transform_Ph(hess::Molecule* mol) {
           for (int j = qproduct.vertexBegin(); j != qproduct.vertexEnd(); j = qproduct.vertexNext(j))
             if (qproduct.getAAMArray()[j] == aam) {
               int chg = qproduct.getAtomCharge(j);
-              if (chg != 0)
+              if (chg != indigo::CHARGE_UNKNOWN){
                 mol->setAtomCharge(molcopy_mapping[matcher.getQueryMapping()[i]], chg);
+              }
             }
       }
 
       for (i = qreactant.edgeBegin(); i != qreactant.edgeEnd(); i = qreactant.edgeNext(i)) {
         int order = qproduct.getBondOrder(i);
-        if (order > 0)
-          mol->setBondOrder(mol->findEdgeIndex(molcopy_mapping[matcher.getQueryMapping()[qreactant.getEdge(i).beg]],
-                molcopy_mapping[matcher.getQueryMapping()[qreactant.getEdge(i).end]]), order);
+        if (order > 0){
+           bond_order_changed(
+                   molcopy_mapping[matcher.getQueryMapping()[qreactant.getEdge(i).beg]],
+                   molcopy_mapping[matcher.getQueryMapping()[qreactant.getEdge(i).end]],
+                   order, mol);
+        }
       }
     }
   }

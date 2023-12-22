@@ -394,7 +394,7 @@ hess::Vec3d get_new_bonds_vector(hess::Molecule* mol, int a_id, double length) {
 
 void unfold_hydrogens(hess::Molecule* mol) {
   for (int a_id = mol->vertexBegin(); a_id != mol->vertexEnd(); a_id = mol->vertexNext(a_id)) {
-    int h_count = mol->getImplicitH(a_id);
+    int h_count = mol->getImplicitH_NoThrow(a_id, 0);
     if (h_count != 0) {
       while (h_count > 0) {
         double length = mol->get_correct_bond_rad(a_id) + GetCovalentRad(1);
@@ -681,6 +681,10 @@ bool sort_z(const pair<Atom*, int>& a1, const pair<Atom*, int>& a2) {
 }
 
 void determine_connectivity(hess::Molecule* mol) {
+  if (int g = mol->edgeCount() > 0) {
+    mol->bonds.resize(mol->edgeEnd());
+    memset(&(mol->bonds[0]), 0, sizeof (Bond) * mol->bonds.size());
+  }
   set <pair<int, int>> ex_bonds;
   vector<pair < Atom*, int>> z_sorted_atoms;
   for (int a_id = mol->vertexBegin(); a_id != mol->vertexEnd(); a_id = mol->vertexNext(a_id)) {
@@ -732,7 +736,11 @@ void determine_connectivity(hess::Molecule* mol) {
       double length = distance(*a, *b);
       a->valence++;
       b->valence++;
-      mol->add_bond(a_id, b_id, 1, length);
+      int bond_id;
+      if (bond_id = mol->findEdgeIndex(a_id, b_id) >= 0)
+        mol->bonds[bond_id].length = length;
+      else
+        mol->add_bond(a_id, b_id, 1, length);
       ex_bonds.insert(make_pair(a_id, b_id));
     }
   }

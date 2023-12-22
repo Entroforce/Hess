@@ -46,41 +46,6 @@ void calcLigandRootCenter(double* ligand_center, hess::Molecule * ligand) {
   ligand_center[2] = average.z;
 }
 
-void calcLigandBoundingBox(double* ligand_box, double* ligand_center, hess::Molecule* ligand) {
-  double min_x = 1e9, min_y = 1e9, min_z = 1e9;
-  double max_x = -1e9, max_y = -1e9, max_z = -1e9;
-  for (int a_id = ligand->vertexBegin(); a_id != ligand->vertexEnd(); a_id = ligand->vertexNext(a_id)) {
-    hess::Atom *a = ligand->get_atom(a_id);
-    double x = a->x;
-    double y = a->y;
-    double z = a->z;
-    if (x < min_x)
-      min_x = x;
-    if (x > max_x)
-      max_x = x;
-    if (y < min_y)
-      min_y = y;
-    if (y > max_y)
-      max_y = y;
-    if (z < min_z)
-      min_z = z;
-    if (z > max_z)
-      max_z = z;
-  }
-  double l_x = fabs(ligand_center[0] - min_x);
-  double r_x = fabs(ligand_center[0] - max_x);
-  double l_y = fabs(ligand_center[1] - min_y);
-  double r_y = fabs(ligand_center[1] - max_y);
-  double l_z = fabs(ligand_center[2] - min_z);
-  double r_z = fabs(ligand_center[2] - max_z);
-  ligand_box[0] = l_x;
-  ligand_box[1] = r_x;
-  ligand_box[2] = l_y;
-  ligand_box[3] = r_y;
-  ligand_box[4] = l_z;
-  ligand_box[5] = r_z;
-}
-
 void moveLigandToCenter(double* ligand_center, hess::Molecule* ligand) {
   for (int a_id = ligand->vertexBegin(); a_id != ligand->vertexEnd(); a_id = ligand->vertexNext(a_id)) {
     hess::Atom* a = ligand->get_atom(a_id);
@@ -130,9 +95,7 @@ grid_new(num_atom_types()), grid_deriv_new(num_atom_types()) {
   receptor = new hess::Molecule(*((hess::Molecule*)_prot));
   moveProtein(receptor, box);
   double ligand_center[3] = {0};
-  double ligand_box[6] = {0};
   calcLigandRootCenter(ligand_center, ligand);
-  calcLigandBoundingBox(ligand_box, ligand_center, ligand);    
   moveLigandToCenter(ligand_center, ligand);
   find_ligand_pairs(ligand);
   set_insubtree(ligand);  
@@ -171,7 +134,6 @@ grid_new(num_atom_types()), grid_deriv_new(num_atom_types()) {
   xc = box[0];
   yc = box[1];
   zc = box[2];
-  this->ligand_box = ligand_box;
   this->ligand_center = ligand_center;
   granularity = _granularity;
   const double span[3] = {this->size_x, this->size_y, this->size_z};

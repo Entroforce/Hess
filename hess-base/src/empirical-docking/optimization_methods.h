@@ -24,11 +24,6 @@ using Eigen::VectorXd;
 
 void calc_all_da_dalpha(vector<hess::Vec3d> &da_dalpha, hess::Molecule *lig, simplified_tree& tr, const vector<int>& encoding_inv, const Eigen::VectorXd& x, vector<int>& rotsmap);
 void calc_all_da_dalpha_type1(vector<hess::Vec3d>& da_dalpha, hess::Molecule *lig, simplified_tree& tr, const vector<int>& encoding_inv, const Eigen::VectorXd& x);
-
-int grid_encode(int a, int x, int y, int z, const int sz);
-int encode(int a, int x, int y, int z, const int sz);
 double random_number_ils(double q);
-void random_change_type_0(VectorXd& v, VectorXd& old_v, double coef, double conr[3]);
-void random_change_type_2(VectorXd& v, VectorXd& old_v, double coef, double conr[3]);
 void random_change(VectorXd& v, VectorXd& old_v, double coef, double conr[3]);
 double random_angle_ils();

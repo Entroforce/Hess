@@ -26,12 +26,6 @@ using Eigen::MatrixXd;
 using Eigen::VectorXf;
 using namespace LBFGSpp;
 
-bool check_conf(hess::Molecule *lig, simplified_tree& tr, const vector<int>& encoding_inv, const Eigen::VectorXd& x) {
-  transformation(lig, tr, encoding_inv, x);
-  bool bull = !geometry_changed(lig);
-  return bull;
-}
-
 bool check_exceeded_box_limits_start(hess::Molecule *lig, double size_x, double size_y, double size_z, simplified_tree& tr, int& ex_count, const vector<int>& encoding_inv, const Eigen::VectorXd& x) {
   size_x /= 2;
   size_y /= 2;

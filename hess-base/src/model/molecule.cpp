@@ -202,7 +202,7 @@ int Molecule::add_atom(double x, double y, double z, const int element_num) {
 int Molecule::add_bond(int beg, int end, int order, double length) {
   int id = addBond(beg, end, order);
 
-  if (id <= bonds.size())
+  if (id >= bonds.size())
     bonds.resize(id + 1);
 
   memset(&bonds[id], 0, sizeof (Bond));

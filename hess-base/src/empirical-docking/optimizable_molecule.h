@@ -63,7 +63,6 @@ public:
   double zc;
   double granularity = 0.375;
   vector<int> rotsmap;
-  double* ligand_box;
   double* ligand_center;
   vector<Array3D<double>> grid_new;
   vector<Array3D<hess::Vec3d>> grid_deriv_new;
