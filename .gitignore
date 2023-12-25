@@ -1,0 +1,64 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+cmake-build-debug
+run_mop
+fort*
+logout.txt
+.idea/*
+.DS_Store
+*/.DS_Store
+*.a
+*.so
+*.o
+*.end
+*.arc
+*.log
+*.temp
+*.arcaa
+*.exe
+*.arcab
+*.arcac
+*.arcad
+*.arcae
+*.mod
+.history/
+**/nbproject/private/
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+**/core
+**/.dep.inc

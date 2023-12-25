@@ -322,7 +322,7 @@ double eval_adjusted(ScoringTerms &st, hess::Molecule *ligand, hess::Molecule *r
       }
       double r2 = distance_sqr(*a, *b);
       if (r2 < max_cutoff_sqr) {
-        e += st.eval_fast(t1, t2, sqrt(r2));
+        this_e += st.eval_fast(t1, t2, sqrt(r2));
       }
     }
     curl(this_e);

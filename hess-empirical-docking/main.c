@@ -308,6 +308,7 @@ int main(int argc, char *argv[]) {
   }
   if (hessAddHydrogens(lig_atoms) != 0) {
     hessDestroy(parser);
+    hessDestroy(lig_atoms);
     hessDestroy(rec_atoms);
     hessDestroy(lig_atoms);
     hessDestroy(box_atoms);
