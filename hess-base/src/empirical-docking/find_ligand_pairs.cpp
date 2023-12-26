@@ -20,142 +20,6 @@
 #include <queue>
 using namespace std;
 
-void calc_distances(vector<int> &d, hess::Molecule *lig, int start_id, vector <int>& rot_path) {
-  int n = lig->get_atoms_count();
-  vector<int> v(n, 1);
-  int min_id;
-  int temp;
-  int min;
-  d[start_id] = 0;
-  int iters = 0;
-  do {
-    iters++;
-    min_id = 1e9;
-    min = 1e9;
-    for (int i = lig->vertexBegin(); i != lig->vertexEnd(); i = lig->vertexNext(i)) {
-      if ((v[i] == 1) && (d[i] < min)) {
-        min = d[i];
-        min_id = i;
-      }
-    }
-    if (min_id != 1e9) {
-      ver atom_ver = lig->getVertex(min_id);
-      for (int id = atom_ver.neiBegin(); id != atom_ver.neiEnd(); id = atom_ver.neiNext(id)) {
-        int nei_min = atom_ver.neiVertex(id);
-        temp = min + 1;
-        if (temp < d[nei_min]) {
-          d[nei_min] = temp;
-        }
-      }
-      v[min_id] = 0;
-    }
-    if (iters > 1e9)
-      throw HessException("Error when going into the depth of a molecule when calculating distances to other atoms!");
-  } while (min_id < 1e9);
-  //find path for rotatable flag
-  vector<int> processed;
-  for (int a_id = lig->vertexBegin(); a_id != lig->vertexEnd(); a_id = lig->vertexNext(a_id)) {
-    if (a_id != start_id)
-      processed.push_back(a_id);
-  }
-  for (int i : processed) {
-    int end = i;
-    int w = d[end];
-    bool was_rot = false;
-    iters = 0;
-    while (end != start_id) {
-      iters++;
-      for (int id = lig->getVertex(end).neiBegin(); id != lig->getVertex(end).neiEnd();
-               id = lig->getVertex(end).neiNext(id)) {
-        int nei_id = lig->getVertex(end).neiVertex(id);
-        int temp = w - 1;
-        if (temp == d[nei_id]) {
-          if (lig->get_bond(lig->findEdgeIndex(end, nei_id))->rotatable) {
-            was_rot = true;
-            break;
-          }
-          w = temp;
-          end = nei_id;
-          break;
-        }
-      }
-      if (was_rot)
-        break;
-      if (iters > 1e9)
-        throw HessException("Error when going into the depth of a molecule when calculating distances to other atoms!");
-    }
-    if (was_rot) {
-      rot_path[i] = 1;
-    }
-  }
-}
-
-
-// if a_id and b_id relate to same ring (m.b. b_id connect to ring)
-
-bool in_same_rings(hess::Molecule *lig, int a_id, int b_id) {
-  int a_ring_id = -1;
-  vector <vector<int>> rings = lig->get_rings();
-  hess::Atom* a = lig->get_atom(a_id);
-  if (lig->getVertex(a_id).degree() == 1 && !a->in_ring) {
-    ver atom_ver = lig->getVertex(a_id);
-    for (int id = atom_ver.neiBegin(); id != atom_ver.neiEnd(); id = atom_ver.neiNext(id)) {
-      int nei_id = atom_ver.neiVertex(id);
-      hess::Atom* nei = lig->get_atom(nei_id);
-      if (nei->in_ring) {
-        int ring_id = 0;
-        for (vector<int> &ring : rings) {
-          for (int ring_atom_id : ring) {
-            if (ring_atom_id == nei_id) {
-              a_ring_id = ring_id;
-              break;
-            }
-          }
-          if (a_ring_id != -1)
-            break;
-          ring_id++;
-        }
-      }
-    }
-  }
-  if (!a->in_ring)
-    return false;
-  if (a_ring_id == -1) {
-    int ring_id = 0;
-    for (vector<int> &ring : rings) {
-      for (int ring_atom_id : ring) {
-        if (ring_atom_id == a_id) {
-          a_ring_id = ring_id;
-          break;
-        }
-      }
-      if (a_ring_id != -1)
-        break;
-      ring_id++;
-    }
-  }
-  assert(a_ring_id != -1);
-  vector<int> a_ring = rings[a_ring_id];
-  hess::Atom* b = lig->get_atom(b_id);
-  if (b->in_ring) {
-    for (int ring_id : a_ring) {
-      if (ring_id == b_id) {
-        return true;
-      }
-    }
-  }
-  ver atom_ver = lig->getVertex(b_id);
-  for (int id = atom_ver.neiBegin(); id != atom_ver.neiEnd(); id = atom_ver.neiNext(id)) {
-    int nei_id = atom_ver.neiVertex(id);
-    for (int ring_id : a_ring) {
-      if (ring_id == nei_id) {
-        return true;
-      }
-    }
-  }
-  return false;
-}
-
 bool comp(const pair<int,int>& p1, pair<int,int>& p2) {
     if (p1.first != p2.first) 
         return p1.first < p2.first;
@@ -300,14 +164,11 @@ void find_ligand_pairs(hess::Molecule *lig) {
             new_pairs2.push_back(p);
     }
     sort(new_pairs2.begin(), new_pairs2.end(), comp);
- /* for (auto &p : new_pairs2) {
-    printf("Pair %d: %d, %d\n", i++, p.first+1, p.second+1);
-  }
-    for (int a_id = lig->vertexBegin(); a_id != lig->vertexEnd(); a_id = lig->vertexNext(a_id)) {
-        hess::Atom* a = lig->get_atom(a_id);
-        printf("Atom: %d, type: %s\n", a_id+1, specific_atom_type::data[a->atom_type].special_name);
-    }   
-    
-;*/
-  
+//  for (auto &p : new_pairs2) {
+//    printf("Pair %d: %d, %d, %.4g\n", i++, p.first+1, p.second+1, distance(*lig->get_atom(p.first), *lig->get_atom(p.second)));
+//  }
+//  for (int a_id = lig->vertexBegin(); a_id != lig->vertexEnd(); a_id = lig->vertexNext(a_id)) {
+//      hess::Atom* a = lig->get_atom(a_id);
+//      printf("Atom: %d, type: %s\n", a_id+1, specific_atom_type::data[a->atom_type].special_name);
+//  }   
 }

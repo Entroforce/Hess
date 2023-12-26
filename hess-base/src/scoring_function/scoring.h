@@ -78,9 +78,9 @@ private:
 
 extern VinardoWeightedTerms vinardo_sc;
 
-double calc_intramolecular_energy(hess::Molecule *lig, hess::Molecule *rec, const char *scoring);
-double eval_adjusted(ScoringTerms &st, hess::Molecule *ligand, hess::Molecule *receptor);
-double calc_affinity(hess::Molecule* lig, hess::Molecule* rec, const char *scoring);
+double calc_intramolecular_energy(hess::Molecule *lig, hess::Molecule *rec);
+double eval_adjusted(hess::Molecule *ligand, hess::Molecule *receptor);
+double calc_affinity(hess::Molecule* lig, hess::Molecule* rec);
 double calc_affinity_with_confind(hess::Molecule *lig, hess::Molecule *rec, ConfIndependentInputs& in, const char *scoring);
 bool geometry_changed(hess::Molecule* mol);
 

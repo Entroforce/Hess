@@ -27,38 +27,6 @@ void sort_configurations(vector<pair<Eigen::VectorXd, pair<double, double>>>& re
     return l.second.first + l.second.second < r.second.first + r.second.second; });
 }
 
-vector<double> calc_autobox(hess::Molecule *ligand) {
-  double size_x, size_y, size_z, xc, yc, zc;
-  double min_x = 1e9, min_y = 1e9, min_z = 1e9;
-  double max_x = -1e9, max_y = -1e9, max_z = -1e9;
-  for (int a_id = ligand->vertexBegin(); a_id != ligand->vertexEnd(); a_id = ligand->vertexNext(a_id)) {
-    hess::Atom *a = ligand->get_atom(a_id);
-    double x = a->x;
-    double y = a->y;
-    double z = a->z;
-    if (x < min_x)
-      min_x = x;
-    if (x > max_x)
-      max_x = x;
-    if (y < min_y)
-      min_y = y;
-    if (y > max_y)
-      max_y = y;
-    if (z < min_z)
-      min_z = z;
-    if (z > max_z)
-      max_z = z;
-  }
-  xc = (min_x + max_x) / 2;
-  yc = (min_y + max_y) / 2;
-  zc = (min_z + max_z) / 2;
-  size_x = fabs(max_x - min_x) + 8;
-  size_y = fabs(max_y - min_y) + 8;
-  size_z = fabs(max_z - min_z) + 8;
-  printf("xc = %lf, yc = %lf, zc = %lf, sizex = %lf, sizey = %lf, sizez = %lf\n", xc, yc, zc, size_x, size_y, size_z);
-  return {xc, yc, zc, size_x, size_y, size_z};
-}
-
 void calc_center_mass_frag(hess::Molecule *pd, simplified_tree &tr, int v, int& count, hess::Vec3d& average) {
   average.x += pd->atoms[v].x;
   average.y += pd->atoms[v].y;
@@ -68,18 +36,6 @@ void calc_center_mass_frag(hess::Molecule *pd, simplified_tree &tr, int v, int& 
     if (!tr.bond_to_parent[child]) {
       calc_center_mass_frag(pd, tr, child, count, average);
     }
-  }
-}
-
-void move_ligand_to_center(double* ligand_center, hess::Molecule *ligand) {
-  for (int a_id = ligand->vertexBegin(); a_id != ligand->vertexEnd(); a_id = ligand->vertexNext(a_id)) {
-    hess::Atom* a = ligand->get_atom(a_id);
-    a->x -= ligand_center[0];
-    a->y -= ligand_center[1];
-    a->z -= ligand_center[2];
-    a->x_orign -= ligand_center[0];
-    a->y_orign -= ligand_center[1];
-    a->z_orign -= ligand_center[2];
   }
 }
 
@@ -160,7 +116,7 @@ void set_parents_to_tree(hess::Molecule* lig) {
 pair<double, double> calc_energy_for_result(hess::Molecule* lig, hess::Molecule* prot, simplified_tree &tr, ConfIndependentInputs& in, const vector<int>& encoding_inv, const Eigen::VectorXd& x, const char* scoring) {
   transformation(lig, tr, encoding_inv, x);
   double inter_e = calc_affinity_with_confind(lig, prot, in, scoring);
-  double intra_e = calc_intramolecular_energy(lig, prot, scoring);
+  double intra_e = calc_intramolecular_energy(lig, prot);
   return {inter_e, intra_e};
 }
 

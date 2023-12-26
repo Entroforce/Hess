@@ -319,12 +319,21 @@ void hessCalcAutobox(void* ligand_v, double* box) {
   box[5] = size_z;
 }
 
-void hessWriteScoreOnly(void* opt_mol) {
+void hessWriteScoreOnly(void* opt_mol, double* receptor_center) {
   Optimizable_molecule* opt = to_optmolecule(opt_mol);
   hess::Molecule* lig = opt->ligand;
   hess::Molecule* rec = opt->receptor;
-  double e = calc_affinity(lig, rec, opt->scoring);
-  double e_intra = calc_intramolecular_energy(lig, rec, opt->scoring);
+  double* ligand_center = opt->ligand_center;
+  ligand_center[0] = -ligand_center[0];
+  ligand_center[1] = -ligand_center[1];
+  ligand_center[2] = -ligand_center[2];
+  receptor_center[0] = -receptor_center[0];
+  receptor_center[1] = -receptor_center[1];
+  receptor_center[2] = -receptor_center[2];
+  moveProtein(rec, receptor_center);
+  moveLigandToCenter(ligand_center, lig);
+  double e = calc_affinity(lig, rec);
+  double e_intra = calc_intramolecular_energy(lig, rec);
   fprintf(hessGetStream(), "Affinity: %7.3f (kcal/mol)\n", e);
   fprintf(hessGetStream(), "Intramolecular energy: %7.3f (kcal/mol)\n", e_intra);
 

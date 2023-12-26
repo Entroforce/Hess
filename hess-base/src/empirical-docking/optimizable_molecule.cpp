@@ -94,7 +94,6 @@ grid_new(num_atom_types()), grid_deriv_new(num_atom_types()) {
   ligand = new hess::Molecule(*((hess::Molecule*)_lig));
   receptor = new hess::Molecule(*((hess::Molecule*)_prot));
   moveProtein(receptor, box);
-  double ligand_center[3] = {0};
   calcLigandRootCenter(ligand_center, ligand);
   moveLigandToCenter(ligand_center, ligand);
   find_ligand_pairs(ligand);
@@ -134,7 +133,6 @@ grid_new(num_atom_types()), grid_deriv_new(num_atom_types()) {
   xc = box[0];
   yc = box[1];
   zc = box[2];
-  this->ligand_center = ligand_center;
   granularity = _granularity;
   const double span[3] = {this->size_x, this->size_y, this->size_z};
   for (int i = 0; i < 3; i++) {

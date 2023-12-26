@@ -42,7 +42,7 @@ extern "C" {
   int hessDeleteFormalCharges(void *mol);
 
   void hessCalcAutobox(void* ligand_v, double* box);
-  void hessWriteScoreOnly(void* opt_mol);
+  void hessWriteScoreOnly(void* opt_mol, double* receptor_center);
   int hessRunRandomIls(int number_of_iterations, int depth, void* opt_v, double* result_array, int tops_count);
   int hessRunOptimize(int number_of_iterations, int depth, void* opt_v, double* result_array, int tops_count);
   int hessRunMonteCarlo(int number_of_iterations, void* opt_v, double* result_array, int tops_count);

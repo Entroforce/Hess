@@ -292,20 +292,24 @@ double eval_intramolecular_energy(ScoringTerms &st, hess::Molecule *ligand, hess
   double e_intra = 0.0;
   double max_cutoff_sqr = st.get_max_cutoff_sqr();
   const vector<pair<int, int>> &lig_pairs = ligand->get_lig_pairs();
+  int i = 0;
   for (auto pair : lig_pairs) {
     hess::Atom* a = ligand->get_atom(pair.first);
     hess::Atom* b = ligand->get_atom(pair.second);
     double r2 = distance_sqr(*a, *b);
     if (r2 < max_cutoff_sqr) {
-      e_intra += st.eval_fast(a->atom_type, b->atom_type, sqrt(r2));
+      double tmp = st.eval_fast(a->atom_type, b->atom_type, sqrt(r2));
+      curl(tmp);
+      e_intra += tmp;
+//      printf("Pair %d: %d, %d, %.4g, %.4g\n", i++, pair.first+1, pair.second+1, distance(*a, *b), tmp);
     }
   }
   return e_intra;
 }
 
-double eval_adjusted(ScoringTerms &st, hess::Molecule *ligand, hess::Molecule *receptor) {
+double eval_adjusted(hess::Molecule *ligand, hess::Molecule *receptor) {
   double e = 0.0;
-  double max_cutoff_sqr = st.get_max_cutoff_sqr();
+  double max_cutoff_sqr = vinardo_sc.get_max_cutoff_sqr();
   const int n = num_atom_types();
   for (int a_id = ligand->vertexBegin(); a_id != ligand->vertexEnd(); a_id = ligand->vertexNext(a_id)) {
     Atom *a = ligand->get_atom(a_id);
@@ -322,13 +326,13 @@ double eval_adjusted(ScoringTerms &st, hess::Molecule *ligand, hess::Molecule *r
       }
       double r2 = distance_sqr(*a, *b);
       if (r2 < max_cutoff_sqr) {
-        this_e += st.eval_fast(t1, t2, sqrt(r2));
+        this_e += vinardo_sc.eval_fast(t1, t2, sqrt(r2));
       }
     }
     curl(this_e);
     e += this_e;
   }
-  double e_conf_independet = st.conf_independent(ligand, e);
+  double e_conf_independet = vinardo_sc.conf_independent(ligand, e);
   return e_conf_independet;
 }
 
@@ -389,7 +393,7 @@ bool geometry_changed(hess::Molecule* mol) {
   return false;
 }
 
-double calc_intramolecular_energy(hess::Molecule *lig, hess::Molecule *rec, const char *scoring) {
+double calc_intramolecular_energy(hess::Molecule *lig, hess::Molecule *rec) {
   double e_s = 0.0;
   e_s = eval_intramolecular_energy(vinardo_sc, lig, rec);
   return e_s;
@@ -401,8 +405,8 @@ double calc_affinity_with_confind(hess::Molecule *lig, hess::Molecule *rec, Conf
   return e_s;
 }
 
-double calc_affinity(hess::Molecule *lig, hess::Molecule *rec, const char *scoring) {
+double calc_affinity(hess::Molecule *lig, hess::Molecule *rec) {
   double e_s = 0.0;
-  e_s = eval_adjusted(vinardo_sc, lig, rec);
+  e_s = eval_adjusted(lig, rec);
   return e_s;
 }

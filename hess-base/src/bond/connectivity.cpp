@@ -490,16 +490,16 @@ void assign_bond_orders(hess::Molecule* mol, bool after_aromatize) {
         bool a_ring_property = false;
         bool b_ring_property = false;
         if (after_aromatize) {
-          a_ring_property = a->aromatic;
-          b_ring_property = b->aromatic;
+          a_ring_property = a->in_ring;;
+          b_ring_property = b->in_ring;;
         } else {
-          a_ring_property = a->in_ring;
-          b_ring_property = b->in_ring;
+          a_ring_property = !a->in_ring;
+          b_ring_property = !b->in_ring;
         }
         if (((b->hybtype == 1) || mol->getVertex(nei_id).degree() == 1)
                 && b->valence + 2 <= GetMaxBonds(mol->getAtomNumber(nei_id))
                 && (curr_el_neg > max_el_neg || (is_aprox(curr_el_neg, max_el_neg, 1.0e-6) && bond->length < shortest_bond))
-                && !a_ring_property && !b_ring_property) {
+                && a_ring_property && b_ring_property) {
           if (has_bond_of_order(nei_id, 2, mol) || has_bond_of_order(nei_id, 3, mol)
                   || (mol->getAtomNumber(nei_id) == 7 && b->valence + 2 > 3)) {
             continue;
@@ -548,17 +548,17 @@ void assign_bond_orders(hess::Molecule* mol, bool after_aromatize) {
         bool a_ring_property = false;
         bool b_ring_property = false;
         if (after_aromatize) {
-          a_ring_property = a->aromatic;
-          b_ring_property = b->aromatic;
-        } else {
           a_ring_property = a->in_ring;
           b_ring_property = b->in_ring;
+        } else {
+          a_ring_property = !a->in_ring;
+          b_ring_property = !b->in_ring;
         }
         if (((b->hybtype == 2) || mol->getVertex(nei_id).degree() == 1)
                 && b->valence + 1 <= GetMaxBonds(mol->getAtomNumber(nei_id))
                 && is_double_bond_geometry(a_id, nei_id, mol)
                 && (curr_el_neg > max_el_neg || (is_aprox(curr_el_neg, max_el_neg, 1.0e-6)))
-                && !a_ring_property && !b_ring_property) {
+                && a_ring_property && b_ring_property) {
           if (has_bond_of_order(nei_id, 2, mol) || has_bond_of_order(nei_id, 3, mol)
                   || (mol->getAtomNumber(nei_id) == 7 && b->valence + 1 > 3)) {
             continue;
@@ -681,7 +681,8 @@ bool sort_z(const pair<Atom*, int>& a1, const pair<Atom*, int>& a2) {
 }
 
 void determine_connectivity(hess::Molecule* mol) {
-  if (int g = mol->edgeCount() > 0) {
+  int bonds_count = mol->edgeCount();
+  if (bonds_count > 0) {
     mol->bonds.resize(mol->edgeEnd());
     memset(&(mol->bonds[0]), 0, sizeof (Bond) * mol->bonds.size());
   }
@@ -736,8 +737,8 @@ void determine_connectivity(hess::Molecule* mol) {
       double length = distance(*a, *b);
       a->valence++;
       b->valence++;
-      int bond_id;
-      if (bond_id = mol->findEdgeIndex(a_id, b_id) >= 0)
+      int bond_id = mol->findEdgeIndex(a_id, b_id);
+      if (bond_id >= 0)
         mol->bonds[bond_id].length = length;
       else
         mol->add_bond(a_id, b_id, 1, length);

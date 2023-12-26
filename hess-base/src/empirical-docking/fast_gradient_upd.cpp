@@ -260,7 +260,7 @@ double fast_gradient(ScoringTerms& st, Optimizable_molecule* mol, const Eigen::V
       }
       grad[tor_id] += acc_torsion_deriv;
     }
-  }    //1e-13 max diff
+  }
   else if (mol->type == 1) {
     for (auto &pair : mol->ligand->pairs) {
       int a_id = pair.first;

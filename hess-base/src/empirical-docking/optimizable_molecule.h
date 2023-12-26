@@ -63,7 +63,6 @@ public:
   double zc;
   double granularity = 0.375;
   vector<int> rotsmap;
-  double* ligand_center;
   vector<Array3D<double>> grid_new;
   vector<Array3D<hess::Vec3d>> grid_deriv_new;
   double gd[3][3] = {
@@ -100,6 +99,7 @@ public:
   string optimize = "mc";
   vector<hess::Molecule*> result_mols;
   unsigned seed;
+  double ligand_center[3];
 };
 
 void find_ligand_pairs(hess::Molecule* lig);

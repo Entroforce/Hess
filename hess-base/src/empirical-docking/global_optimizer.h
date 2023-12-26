@@ -21,7 +21,8 @@
 #include "ils_primitives.h"
 #include "simplified_tree.h"
 
-vector <double> calc_autobox(hess::Molecule *ligand);
+void moveProtein(hess::Molecule* ord_rec, double* box);
+void moveLigandToCenter(double* ligand_center, hess::Molecule* ligand);
 void set_insubtree(hess::Molecule* lig);
 void calc_center_mass_frag(hess::Molecule *pd, simplified_tree &tr, int v, int& count, hess::Vec3d& average);
 void set_parents_to_tree(hess::Molecule* lig);

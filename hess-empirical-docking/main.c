@@ -327,7 +327,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
   if (params.score_only) {
-    hessWriteScoreOnly(opt_molecule);
+    hessWriteScoreOnly(opt_molecule, box);
     hessDestroy(lig_atoms);
     hessDestroy(rec_atoms);
     hessDestroy(box_atoms);
