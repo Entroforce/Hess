@@ -99,7 +99,7 @@ public:
   string optimize = "mc";
   vector<hess::Molecule*> result_mols;
   unsigned seed;
-  double ligand_center[3];
+  double ligand_center[3] = {0};
 };
 
 void find_ligand_pairs(hess::Molecule* lig);

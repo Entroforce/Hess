@@ -362,9 +362,6 @@ void assign_atom_types(hess::Molecule* mol, const string& scoring_type_str) {
       }
     }
     smt sm = string_to_atom_type(element_name_final);
-    if (sm >= specific_atom_type::NumTypes) {
-      int g = 1;
-    }
     assert(sm < specific_atom_type::NumTypes);
     atom->atom_type = sm;
   }

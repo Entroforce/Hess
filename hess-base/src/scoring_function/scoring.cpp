@@ -292,7 +292,6 @@ double eval_intramolecular_energy(ScoringTerms &st, hess::Molecule *ligand, hess
   double e_intra = 0.0;
   double max_cutoff_sqr = st.get_max_cutoff_sqr();
   const vector<pair<int, int>> &lig_pairs = ligand->get_lig_pairs();
-  int i = 0;
   for (auto pair : lig_pairs) {
     hess::Atom* a = ligand->get_atom(pair.first);
     hess::Atom* b = ligand->get_atom(pair.second);
@@ -301,7 +300,6 @@ double eval_intramolecular_energy(ScoringTerms &st, hess::Molecule *ligand, hess
       double tmp = st.eval_fast(a->atom_type, b->atom_type, sqrt(r2));
       curl(tmp);
       e_intra += tmp;
-//      printf("Pair %d: %d, %d, %.4g, %.4g\n", i++, pair.first+1, pair.second+1, distance(*a, *b), tmp);
     }
   }
   return e_intra;

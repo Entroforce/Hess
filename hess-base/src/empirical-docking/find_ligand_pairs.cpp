@@ -20,15 +20,6 @@
 #include <queue>
 using namespace std;
 
-bool comp(const pair<int,int>& p1, pair<int,int>& p2) {
-    if (p1.first != p2.first) 
-        return p1.first < p2.first;
-    else 
-        return p1.second < p2.second;
-} 
-
-
-
 void calc_distances(vector<int> &d, hess::Molecule *lig, int start_id) {
   int n = lig->get_atoms_count();
   vector<int> v(n, 1);
@@ -93,10 +84,6 @@ void find_ligand_pairs(hess::Molecule *lig) {
     }
     cur++;
   }
-  /*for (int i = 0; i < was.size(); i++) {
-    printf("id: %d, comp: %d\n", i + 1, was[i]);
-  }
-  printf("\n");*/
   std::vector<int> neicomp;
   neicomp.resize(lig->vertexEnd());
   for (int a_id = lig->vertexBegin(); a_id != lig->vertexEnd(); a_id = lig->vertexNext(a_id)) {
@@ -152,23 +139,5 @@ void find_ligand_pairs(hess::Molecule *lig) {
   
   for (auto &p : lock_pairs) {
     lig->pairs.push_back(p);
-    new_pairs.push_back(p);
   }
-  //printf("\n\npairs count: %d\n", new_pairs.size());
-  int i = 1;
-  vector<pair<int, int>> new_pairs2;
-    for (auto &p : new_pairs) {
-        if (p.second < p.first)
-            new_pairs2.push_back(make_pair(p.second, p.first));
-        else
-            new_pairs2.push_back(p);
-    }
-    sort(new_pairs2.begin(), new_pairs2.end(), comp);
-//  for (auto &p : new_pairs2) {
-//    printf("Pair %d: %d, %d, %.4g\n", i++, p.first+1, p.second+1, distance(*lig->get_atom(p.first), *lig->get_atom(p.second)));
-//  }
-//  for (int a_id = lig->vertexBegin(); a_id != lig->vertexEnd(); a_id = lig->vertexNext(a_id)) {
-//      hess::Atom* a = lig->get_atom(a_id);
-//      printf("Atom: %d, type: %s\n", a_id+1, specific_atom_type::data[a->atom_type].special_name);
-//  }   
 }

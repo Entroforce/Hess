@@ -120,6 +120,7 @@ int hessSaveMol(void *mol, const char *path) {
   try {
     indigo::FileOutput output(path);
     indigo::MolfileSaver saver(output);
+    saver.mode = indigo::MolfileSaver::MODE_3000;
     saver.saveBaseMolecule(*to_molecule(mol));
     return 0;
   } catch (HessException &e) {
@@ -336,7 +337,6 @@ void hessWriteScoreOnly(void* opt_mol, double* receptor_center) {
   double e_intra = calc_intramolecular_energy(lig, rec);
   fprintf(hessGetStream(), "Affinity: %7.3f (kcal/mol)\n", e);
   fprintf(hessGetStream(), "Intramolecular energy: %7.3f (kcal/mol)\n", e_intra);
-
 }
 
 void* hessMakeOptimizableMolecule(void* ligand_v, void* rec_v, double* box, const char* optimize, double granularity, unsigned seed) {

@@ -93,6 +93,11 @@ grid_new(num_atom_types()), grid_deriv_new(num_atom_types()) {
 
   ligand = new hess::Molecule(*((hess::Molecule*)_lig));
   receptor = new hess::Molecule(*((hess::Molecule*)_prot));
+  assign_atom_types(ligand, string(scoring));
+  assign_atom_types(receptor, string(scoring));
+  adjust_atom_types(ligand);
+  adjust_atom_types(receptor);
+  assign_bond_rots(ligand);
   moveProtein(receptor, box);
   calcLigandRootCenter(ligand_center, ligand);
   moveLigandToCenter(ligand_center, ligand);
