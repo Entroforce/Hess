@@ -76,6 +76,7 @@ Molecule::Molecule(Molecule &mol) {
     int copy_id = this->add_atom(mol.get_atom(a_id)->x, mol.get_atom(a_id)->y, mol.get_atom(a_id)->z, mol.getAtomNumber(a_id));
     atoms[copy_id] = mol.atoms[a_id];
     map_id[a_id] = copy_id;
+    this->setAtomCharge(copy_id, mol.getAtomCharge(a_id));
   }
 
   for (int bond_id = mol.edgeBegin(); bond_id != mol.edgeEnd(); bond_id = mol.edgeNext(bond_id)) {
