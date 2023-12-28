@@ -649,7 +649,7 @@ void delete_bonds_exceeding_valence(hess::Molecule* mol) {
     int a_val = mol->getVertex(a_id).degree();
     int a_bonds_limit = GetMaxBonds(mol->getAtomNumber(a_id));
     while (a_val > a_bonds_limit) {
-      fprintf(hessGetStream(), "Detected more bonds than are allowed!\n");
+      fprintf(hessGetStream(), "Number of bonds exceeds valence on atom %d\n", a_id);
       double max_length = 0;
       int max_length_id = 0;
       ver atom_ver = mol->getVertex(a_id);
