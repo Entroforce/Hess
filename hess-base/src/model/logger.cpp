@@ -20,6 +20,6 @@
 
 namespace hess {
   Logger* Logger::instance = nullptr;
-  FILE * Logger::log_file;
+  FILE * Logger::log_file = NULL;
   std::mutex Mutex;
 }

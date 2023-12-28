@@ -40,6 +40,8 @@ namespace hess {
     }
 
     static FILE* get_stream() {
+      if (log_file == NULL)
+        return stderr;
       return log_file;
     }
 
