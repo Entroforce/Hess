@@ -62,7 +62,7 @@ using namespace std;
 
 void del_tabs(string& in_str) {
   for (int i = 0; i < in_str.size(); i++) {
-    if (in_str[i] == ' ' || in_str[i] == '\t') {
+    if (in_str[i] == ' ' || in_str[i] == '\t' || in_str[i] == '\r') {
       in_str.erase(i, 1);
       i--;
     }
