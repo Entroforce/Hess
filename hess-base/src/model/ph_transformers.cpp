@@ -33,7 +33,7 @@ const vector<vector<string>> pH_data = {
   {"[N^3;!$(N~[!#6;!#1]):1]", "[N+:1]", "10.0"},
   {"[nD2:1]1c[nH]cc1", "[n+:1]1c[nH]cc1", "7.0"},
   {"[ND3+0:1]=[#6]", "[ND3+:1]=[#6]", "4.0"},
-  {"[nD2:1]([#1])1[nD2-0][nD2-0][nD2-0]c1", "[n-:1]1nnnc1", "4.89"},
+  {"[nD2:1]([#1])1[nD2-0][nD2-0][nD2-0]c1", "[n-:1]1nnnc1", "4.89"}, //?
   {"[nD2-0]1[nD2:1]([#1])[nD2-0][nD2-0]c1", "n1[n-:1]nnc1", "4.89"},
   {"[nD2-0:1]1[nD2-0][nD2-0][nD2-0]c1", "[n-:1]1nnnc1", "4.89"},
   {"[ND1:1]~[ND2:2]~[ND1:3]", "[N-:1]=[N+:2]=[N-:3]", "1E+10"},
@@ -175,7 +175,10 @@ void transform_Ph(hess::Molecule* mol) {
               }
             }
       }
-
+      
+      if (qproduct.edgeCount() != qreactant.edgeCount()) // case [nD2:1]([#1])1[nD2-0][nD2-0][nD2-0]c1 >> [n-:1]1nnnc1 for CHEMBL lingand
+        continue;
+      
       for (i = qreactant.edgeBegin(); i != qreactant.edgeEnd(); i = qreactant.edgeNext(i)) {
         int order = qproduct.getBondOrder(i);
         if (order > 0){
