@@ -9,11 +9,11 @@ used for energy estimation.
 ## Prerequisities
 
 * GNU/Linux operating system.
-* `gcc`
 * `g++`
 * `make`
 * `libz-dev`
 * `libeigen3-dev`
+* Intel OneAPI toolkit with `icx` and `ifort` compilers (if you need Hess SE)
 
 ## Build
 
@@ -21,9 +21,9 @@ used for energy estimation.
 ```
 source /opt/intel/oneapi/setvars.sh
 ```
-(skip this if you do not need Hess SE functionality). 
+(skip this if you do not need Hess SE). 
 
-* Run `./setup.sh`, or `./setup-no-se.sh` if you do not need Hess SE functionality.
+* Run `./setup.sh`, or `./setup-no-se.sh` if you do not need Hess SE.
 
 (Indigo library will be downloaded in the process)
 
