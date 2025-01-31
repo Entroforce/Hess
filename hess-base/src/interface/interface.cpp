@@ -31,31 +31,13 @@
 #include "logger.h"
 #include "base_cpp/output.h"
 #include "molecule/molfile_saver.h"
+#include "indigo.h"
+#include "hess_internal.h"
 
 using namespace std;
 using namespace hess;
 
-thread_local static std::string _error_message;
-
-struct HessObject {
-
-  HessObject(Molecule* _mol = nullptr, Optimizable_molecule* _opt_mol = nullptr, Parser* _parser = nullptr) : mol(_mol), opt_mol(_opt_mol), parser(_parser) {
-  }
-
-  ~HessObject() {
-    if (mol != nullptr) {
-      delete mol;
-    } else if (opt_mol != nullptr) {
-      delete opt_mol;
-    } else if (parser != nullptr) {
-      delete parser;
-    }
-  }
-
-  Molecule* mol;
-  Optimizable_molecule* opt_mol;
-  Parser* parser;
-};
+thread_local std::string hess_error_message;
 
 Molecule* to_molecule(void* object) {
   HessObject* ho = (HessObject*) object;
@@ -105,13 +87,13 @@ void* hessLoadMolecule(void *parser, const char *file_name) {
   try {
     return new HessObject(to_parser(parser)->parse_molecule(file_name), nullptr, nullptr);
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   }
 }
@@ -124,13 +106,13 @@ int hessSaveMol(void *mol, const char *path) {
     saver.saveBaseMolecule(*to_molecule(mol));
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -143,13 +125,13 @@ int hessDeleteFormalCharges(void *mol) {
     }
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 
@@ -169,13 +151,13 @@ int hessSaveSdf(void* opt_molecule, const char *path) {
     }
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -199,13 +181,13 @@ int hessDeleteHydrogens(void *mol) {
       molecule->remove_atom(to_remove[i]);
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -234,13 +216,13 @@ int hessAssignBonds(void* old_mol) {
     hybridize(mol);
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -253,13 +235,13 @@ int hessProtonate(void* mol) {
     }
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -272,13 +254,13 @@ int hessAddHydrogens(void *mol) {
     atoms->charge_calculate();
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -343,13 +325,13 @@ void* hessMakeOptimizableMolecule(void* ligand_v, void* rec_v, double* box, cons
   try {
     return new HessObject(nullptr, new Optimizable_molecule(to_molecule(ligand_v), to_molecule(rec_v), box, optimize, granularity, seed), nullptr);
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return NULL;
   }
 }
@@ -412,13 +394,13 @@ int hessRunRandomIls(int number_of_iterations, int depth, void* opt_v, double* r
     result_array[1] = result_pairs[0].second.second;
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -456,13 +438,13 @@ int hessRunMonteCarlo(int number_of_iterations, void* opt_v, double* result_arra
     result_array[1] = result_pairs[0].second.second;
     return 0;
   } catch (HessException &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (indigo::Exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   } catch (exception &e) {
-    _error_message = e.what();
+    hess_error_message = e.what();
     return -1;
   }
 }
@@ -472,5 +454,5 @@ void hessDestroy(void *object) {
 }
 
 const char *hessGetLastError() {
-  return _error_message.c_str();
+  return hess_error_message.c_str();
 }

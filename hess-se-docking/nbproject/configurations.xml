@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>icx</commandlineTool>
+          <incDir>
+            <pElem>../hess-base/src/parser</pElem>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../indigo/Indigo/third_party/rapidjson</pElem>
+            <pElem>../indigo/Indigo/third_party/tinyxml2</pElem>
+            <pElem>../indigo/Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common</pElem>
+            <pElem>../indigo/Indigo</pElem>
+            <pElem>../hess-se/src/interface</pElem>
+          </incDir>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </cTool>
+        <ccTool>
+          <commandlineTool>icpx</commandlineTool>
+          <incDir>
+            <pElem>../hess-base/src/parser</pElem>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../indigo/Indigo/third_party/rapidjson</pElem>
+            <pElem>../indigo/Indigo/third_party/tinyxml2</pElem>
+            <pElem>../indigo/Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/</pElem>
+            <pElem>../indigo/Indigo/</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+          </incDir>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>icpx</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-se"
+                            CT="3"
+                            CN="Debug"
+                            AC="false"
+                            BL="true"
+                            WD="../hess-se"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-se.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-base"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../hess-base"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-base.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../indigo"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../indigo"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libindigo.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../cmopac"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../cmopac"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libcmopac.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DataCompression</linkerLibStdlibItem>
+          </linkerLibItems>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>icx</commandlineTool>
+          <incDir>
+            <pElem>../hess-base/src/parser</pElem>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../indigo/Indigo/third_party/rapidjson</pElem>
+            <pElem>../indigo/Indigo/third_party/tinyxml2</pElem>
+            <pElem>../indigo/Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common</pElem>
+            <pElem>../indigo/Indigo</pElem>
+            <pElem>../hess-se/src/interface</pElem>
+          </incDir>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>icpx</commandlineTool>
+          <incDir>
+            <pElem>../hess-base/src/parser</pElem>
+            <pElem>../hess-base/src</pElem>
+            <pElem>../hess-base/src/interface</pElem>
+            <pElem>../hess-base/src/model</pElem>
+            <pElem>../hess-base/src/bond</pElem>
+            <pElem>../hess-base/src/empirical-docking</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+            <pElem>../indigo/Indigo/third_party/object_threadsafe</pElem>
+            <pElem>../indigo/Indigo/third_party/rapidjson</pElem>
+            <pElem>../indigo/Indigo/third_party/tinyxml2</pElem>
+            <pElem>../indigo/Indigo/third_party/inchi/INCHI_BASE/src</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec/cppcodec</pElem>
+            <pElem>../indigo/Indigo/third_party/cppcodec</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_c</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/base_cpp</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/molecule</pElem>
+            <pElem>../indigo/Indigo/core/indigo-core/common/</pElem>
+            <pElem>../indigo/Indigo/</pElem>
+            <pElem>../indigo/Indigo/api/c/indigo</pElem>
+          </incDir>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandlineTool>icpx</commandlineTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-se"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../hess-se"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-se.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../hess-base"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../hess-base"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libhess-base.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../indigo"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../indigo"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libindigo.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../cmopac"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="true"
+                            WD="../cmopac"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libcmopac.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>DataCompression</linkerLibStdlibItem>
+          </linkerLibItems>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

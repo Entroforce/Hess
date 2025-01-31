@@ -18,7 +18,7 @@
 
 #pragma once
 
-#include "molecule.h"
+#include "model/molecule.h"
 
 namespace hess {
 

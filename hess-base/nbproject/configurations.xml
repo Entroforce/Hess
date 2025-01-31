@@ -13,6 +13,7 @@
       <itemPath>src/scoring_function/features.h</itemPath>
       <itemPath>src/empirical-docking/global_optimizer.h</itemPath>
       <itemPath>src/interface/hess.h</itemPath>
+      <itemPath>src/interface/hess_internal.h</itemPath>
       <itemPath>src/empirical-docking/ils_primitives.h</itemPath>
       <itemPath>src/model/logger.h</itemPath>
       <itemPath>src/empirical-docking/matrix4.h</itemPath>
@@ -75,10 +76,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>../Indigo</Elem>
-    <Elem>../Indigo</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="3">
@@ -109,6 +106,7 @@
             <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
             <pElem>../indigo/Indigo/api/c/indigo-inchi</pElem>
           </incDir>
+          <commandLine>-std=c++14</commandLine>
         </ccTool>
         <archiverTool>
         </archiverTool>
@@ -212,6 +210,8 @@
             flavor2="0">
       </item>
       <item path="src/interface/hess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interface/hess_internal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/interface/interface.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -277,6 +277,7 @@
             <pElem>../indigo/Indigo/api/c/indigo-renderer</pElem>
             <pElem>../indigo/Indigo/api/c/bingo-nosql</pElem>
           </incDir>
+          <commandLine>-std=c++14</commandLine>
         </ccTool>
         <archiverTool>
         </archiverTool>
@@ -380,6 +381,8 @@
             flavor2="0">
       </item>
       <item path="src/interface/hess.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interface/hess_internal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/interface/interface.cpp" ex="false" tool="1" flavor2="0">
       </item>

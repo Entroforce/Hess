@@ -1,6 +1,6 @@
 /**************************************************************************
  * This file is part of the Hess project
- * Copyright (C) 2023 Entroforce LLC
+ * Copyright (C) 2023-2025 Entroforce LLC
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -30,6 +30,7 @@ extern "C" {
   int hessAddHydrogens(void* mol);
   void* hessCreateParser();
   void* hessLoadMolecule(void* parser, const char* file_name);
+  
   int hessSaveMol(void* mol, const char* path);
   int hessSaveSdf(void* mols_void, const char *path);
   void hessDestroy(void* object);

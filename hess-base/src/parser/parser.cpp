@@ -230,10 +230,16 @@ bool is_mol_format(const char* file_name, ifstream& ifile) {
 void parse_pdb(hess::Molecule* molecule, const char* file_name, ifstream& file) {
   string curr_str;
   int row_i = 1;
+  int check = 0;
+  int offset = 0;
   while (getline(file, curr_str)) {
     string type = curr_str.substr(0, 6);
     del_tabs(type);
     if (type == "ATOM" || type == "HETATM") {
+        if(check == 0){
+            check = 1;
+            offset = row_i - 1;
+        }
       char *buffer = const_cast<char*> (curr_str.c_str());
       string sbuf = &buffer[6];
       bool hetatm = (type == "HETATM") ? true : false;
@@ -288,6 +294,7 @@ void parse_pdb(hess::Molecule* molecule, const char* file_name, ifstream& file) 
       if (sbuf.size() > 73) {
         string charge_str = curr_str.substr(78, 2);
         del_tabs(charge_str);
+        std::cout << row_i << " " << charge_str << std::endl;
         if (charge_str != "") {
           charge = charge_str[0] - '0';
           if (charge_str[1] == '-') {
@@ -295,7 +302,15 @@ void parse_pdb(hess::Molecule* molecule, const char* file_name, ifstream& file) 
           }
         }
       }
-
+      
+      char txtatmi[26] = {0};
+      snprintf(txtatmi, 26, "( %5d %3s %4d)        ", row_i - offset, residue_name.c_str(), res_seq);
+      std::cout << txtatmi << " --- " << residue_name << " " << res_seq << std::endl;
+      ((Molecule*) molecule)->txtatm = (char **) realloc(((Molecule*) molecule)->txtatm, (row_i - offset) * sizeof(char *));
+      ((Molecule*) molecule)->txtatm[row_i - offset - 1] = (char *) malloc(26 * sizeof(char));
+      
+      memcpy(((Molecule*) molecule)->txtatm[row_i - offset - 1], txtatmi, 26);
+      
       int id = ((Molecule*) molecule)->add_atom(x, y, z, element_num);
       ((Molecule*) molecule)->setAtomCharge(id, charge);
     }

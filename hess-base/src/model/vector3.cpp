@@ -17,6 +17,7 @@
  **************************************************************************/
 
 #include "vector3.h"
+#include <ctime>
 
 using namespace indigo;
 

@@ -18,7 +18,7 @@
 
 #pragma once
 
-#include "bond_order_determination.h"
+#include "bond/bond_order_determination.h"
 #include "model/molecule.h"
 #include "math/algebra.h"
 

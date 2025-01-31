@@ -26,8 +26,8 @@
 
 
 #include "scoring_function/features.h"
-#include "simplified_tree.h"
-#include "array3d.h"
+#include "model/simplified_tree.h"
+#include "model/array3d.h"
 
 using Eigen::VectorXd;
 

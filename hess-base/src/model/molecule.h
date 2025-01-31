@@ -19,7 +19,6 @@
 #pragma once
 
 #include "exception.h"
-#include "indigo.h"
 #include "vector3.h"
 #include "molecule/molecule.h"
 #include "scoring_function/constants.h"
@@ -47,6 +46,7 @@ namespace hess {
     bool in_ring;
     bool aromatic;
     smt atom_type;
+    int num;
   };
 
   class Bond {
@@ -102,5 +102,6 @@ namespace hess {
     vector<vector<int>> insubt;
     vector<int> tree_parents;
     vector<hess::Vec3d> coords;
+    char **txtatm;
   };
 } // namespace hess

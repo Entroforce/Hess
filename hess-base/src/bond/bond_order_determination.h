@@ -18,9 +18,8 @@
 
 #pragma once
 
-#include "molecule.h"
-#include "vector3.h"
-#include "molecule.h"
+#include "model/molecule.h"
+#include "model/vector3.h"
 
 //! \return Returns the bond length in angstroms.
 double distance(const hess::Atom & a, const hess::Atom & b);

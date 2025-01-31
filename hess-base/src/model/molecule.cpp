@@ -34,6 +34,8 @@ hess::Atom::Atom(double x, double y, double z) {
   this->in_ring = false;
   this->hybtype = 0;
   this->aromatic = false;
+  this->num = -1;
+  
 }
 
 hess::Vec3d hess::Atom::get_vector() {
@@ -54,6 +56,7 @@ Bond::Bond(double length) {
 Molecule::Molecule() {
   this->pH = -1.0;
   total_charge = 0;
+  this->txtatm = nullptr;
 };
 
 Molecule::~Molecule() {
@@ -107,6 +110,8 @@ Molecule::Molecule(Molecule &mol) {
     }
     this->aromatic_rings.push_back(new_aromatic_ring);
   }
+  
+  this->txtatm = mol.txtatm;
 }
 
 bool Molecule::atom_is_nonpolar_hydrogen(int atom_id) {
@@ -195,6 +200,7 @@ int Molecule::add_atom(double x, double y, double z, const int element_num) {
   atoms[id].x_orign = x;
   atoms[id].y_orign = y;
   atoms[id].z_orign = z;
+  atoms[id].num = element_num;
 
   setAtomXyz(id, x, y, z);
   return id;

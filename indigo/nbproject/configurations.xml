@@ -4215,7 +4215,6 @@
             <pElem>Indigo/core/indigo-core/common/base_cpp</pElem>
             <pElem>Indigo/core/indigo-core</pElem>
             <pElem>Indigo/api/c/indigo</pElem>
-            <pElem>Indigo/third_party/cppcodec/cppcodec</pElem>
             <pElem>Indigo/third_party/cppcodec</pElem>
             <pElem>Indigo/api/cpp</pElem>
             <pElem>Indigo/api/cpp/src</pElem>

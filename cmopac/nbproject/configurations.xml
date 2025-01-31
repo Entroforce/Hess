@@ -1,0 +1,2871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="c_src" displayName="c_src" projectFiles="true">
+      <itemPath>c_src/compfg.c</itemPath>
+      <itemPath>c_src/config.h</itemPath>
+      <itemPath>c_src/fock2.c</itemPath>
+      <itemPath>c_src/fockdorbs.c</itemPath>
+      <itemPath>c_src/getdat.c</itemPath>
+      <itemPath>c_src/gettxt.c</itemPath>
+      <itemPath>c_src/helect.c</itemPath>
+      <itemPath>c_src/mopac.c</itemPath>
+      <itemPath>c_src/readmo.c</itemPath>
+      <itemPath>c_src/run_mopac.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f_src" displayName="f_src" projectFiles="true">
+      <itemPath>f_src/Common_arrays_C.F90</itemPath>
+      <itemPath>f_src/H_bond_correction_EC_plus_ER.F90</itemPath>
+      <itemPath>f_src/H_bond_correction_EH_plus.F90</itemPath>
+      <itemPath>f_src/H_bond_correction_PM6_DH_Dispersion.F90</itemPath>
+      <itemPath>f_src/H_bond_correction_PM6_DH_type.F90</itemPath>
+      <itemPath>f_src/H_bond_correction_bits.F90</itemPath>
+      <itemPath>f_src/H_bonds4.F90</itemPath>
+      <itemPath>f_src/MOZYME_C.F90</itemPath>
+      <itemPath>f_src/aababc.F90</itemPath>
+      <itemPath>f_src/aababc_I.F90</itemPath>
+      <itemPath>f_src/aabacd.F90</itemPath>
+      <itemPath>f_src/aabacd_I.F90</itemPath>
+      <itemPath>f_src/aabbcd.F90</itemPath>
+      <itemPath>f_src/aabbcd_I.F90</itemPath>
+      <itemPath>f_src/add_more_interactions.F90</itemPath>
+      <itemPath>f_src/addfck_I.F90</itemPath>
+      <itemPath>f_src/addhb.F90</itemPath>
+      <itemPath>f_src/addhcr_I.F90</itemPath>
+      <itemPath>f_src/addnuc_I.F90</itemPath>
+      <itemPath>f_src/adjvec.F90</itemPath>
+      <itemPath>f_src/afmm_mod.F90</itemPath>
+      <itemPath>f_src/aintgs_I.F90</itemPath>
+      <itemPath>f_src/alphaf_I.F90</itemPath>
+      <itemPath>f_src/analyt.F90</itemPath>
+      <itemPath>f_src/analyt_C.F90</itemPath>
+      <itemPath>f_src/anavib.F90</itemPath>
+      <itemPath>f_src/asum_I.F90</itemPath>
+      <itemPath>f_src/atomrs.F90</itemPath>
+      <itemPath>f_src/aval_I.F90</itemPath>
+      <itemPath>f_src/babbbc.F90</itemPath>
+      <itemPath>f_src/babbbc_I.F90</itemPath>
+      <itemPath>f_src/babbcd.F90</itemPath>
+      <itemPath>f_src/babbcd_I.F90</itemPath>
+      <itemPath>f_src/bangle.F90</itemPath>
+      <itemPath>f_src/bangle_I.F90</itemPath>
+      <itemPath>f_src/bfn.F90</itemPath>
+      <itemPath>f_src/bfn_I.F90</itemPath>
+      <itemPath>f_src/bintgs_I.F90</itemPath>
+      <itemPath>f_src/blas_I.F90</itemPath>
+      <itemPath>f_src/buildf.F90</itemPath>
+      <itemPath>f_src/calpar.F90</itemPath>
+      <itemPath>f_src/calpar_I.F90</itemPath>
+      <itemPath>f_src/ccprod_I.F90</itemPath>
+      <itemPath>f_src/ccrep.F90</itemPath>
+      <itemPath>f_src/cdiag_I.F90</itemPath>
+      <itemPath>f_src/chanel_C.F90</itemPath>
+      <itemPath>f_src/charg_I.F90</itemPath>
+      <itemPath>f_src/check.F90</itemPath>
+      <itemPath>f_src/chkion.F90</itemPath>
+      <itemPath>f_src/chklew.F90</itemPath>
+      <itemPath>f_src/chrge.F90</itemPath>
+      <itemPath>f_src/chrge_I.F90</itemPath>
+      <itemPath>f_src/chrge_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/cnvg.F90</itemPath>
+      <itemPath>f_src/cnvg_I.F90</itemPath>
+      <itemPath>f_src/cnvgz.F90</itemPath>
+      <itemPath>f_src/coe.F90</itemPath>
+      <itemPath>f_src/coe_I.F90</itemPath>
+      <itemPath>f_src/collid_I.F90</itemPath>
+      <itemPath>f_src/collis_I.F90</itemPath>
+      <itemPath>f_src/compct.F90</itemPath>
+      <itemPath>f_src/compfg_I.F90</itemPath>
+      <itemPath>f_src/conref_C.F90</itemPath>
+      <itemPath>f_src/convert_storage.F90</itemPath>
+      <itemPath>f_src/cosmo.F90</itemPath>
+      <itemPath>f_src/cosmo_C.F90</itemPath>
+      <itemPath>f_src/dang.F90</itemPath>
+      <itemPath>f_src/dang_I.F90</itemPath>
+      <itemPath>f_src/datin.F90</itemPath>
+      <itemPath>f_src/datin_I.F90</itemPath>
+      <itemPath>f_src/daxpy_I.F90</itemPath>
+      <itemPath>f_src/dcart.F90</itemPath>
+      <itemPath>f_src/dcart_I.F90</itemPath>
+      <itemPath>f_src/ddot_I.F90</itemPath>
+      <itemPath>f_src/ddpo_I.F90</itemPath>
+      <itemPath>f_src/delmol_I.F90</itemPath>
+      <itemPath>f_src/delri_I.F90</itemPath>
+      <itemPath>f_src/delsta.F90</itemPath>
+      <itemPath>f_src/densit.F90</itemPath>
+      <itemPath>f_src/density_cuda_i.F90</itemPath>
+      <itemPath>f_src/density_for_GPU.F90</itemPath>
+      <itemPath>f_src/density_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/deri0.F90</itemPath>
+      <itemPath>f_src/deri0_I.F90</itemPath>
+      <itemPath>f_src/deri1.F90</itemPath>
+      <itemPath>f_src/deri1_I.F90</itemPath>
+      <itemPath>f_src/deri2.F90</itemPath>
+      <itemPath>f_src/deri21.F90</itemPath>
+      <itemPath>f_src/deri21_I.F90</itemPath>
+      <itemPath>f_src/deri22.F90</itemPath>
+      <itemPath>f_src/deri22_I.F90</itemPath>
+      <itemPath>f_src/deri23.F90</itemPath>
+      <itemPath>f_src/deri23_I.F90</itemPath>
+      <itemPath>f_src/deri2_I.F90</itemPath>
+      <itemPath>f_src/deritr.F90</itemPath>
+      <itemPath>f_src/deritr_I.F90</itemPath>
+      <itemPath>f_src/deriv.F90</itemPath>
+      <itemPath>f_src/deriv_I.F90</itemPath>
+      <itemPath>f_src/dernvo.F90</itemPath>
+      <itemPath>f_src/dernvo_I.F90</itemPath>
+      <itemPath>f_src/ders_I.F90</itemPath>
+      <itemPath>f_src/dex2_I.F90</itemPath>
+      <itemPath>f_src/dfield.F90</itemPath>
+      <itemPath>f_src/dfield_I.F90</itemPath>
+      <itemPath>f_src/dfock2.F90</itemPath>
+      <itemPath>f_src/dfock2_I.F90</itemPath>
+      <itemPath>f_src/dfport.F90</itemPath>
+      <itemPath>f_src/dfpsav.F90</itemPath>
+      <itemPath>f_src/dfpsav_I.F90</itemPath>
+      <itemPath>f_src/dftd3_bits.F90</itemPath>
+      <itemPath>f_src/dgefa_I.F90</itemPath>
+      <itemPath>f_src/dgetri_I.F90</itemPath>
+      <itemPath>f_src/dhc.F90</itemPath>
+      <itemPath>f_src/dhc_I.F90</itemPath>
+      <itemPath>f_src/dhcore.F90</itemPath>
+      <itemPath>f_src/dhcore_I.F90</itemPath>
+      <itemPath>f_src/diag.F90</itemPath>
+      <itemPath>f_src/diag_I.F90</itemPath>
+      <itemPath>f_src/diag_for_GPU.F90</itemPath>
+      <itemPath>f_src/diagg.F90</itemPath>
+      <itemPath>f_src/diagg1.F90</itemPath>
+      <itemPath>f_src/diagg2.F90</itemPath>
+      <itemPath>f_src/diagi.F90</itemPath>
+      <itemPath>f_src/diagi_I.F90</itemPath>
+      <itemPath>f_src/diat.F90</itemPath>
+      <itemPath>f_src/diat2_I.F90</itemPath>
+      <itemPath>f_src/diat_I.F90</itemPath>
+      <itemPath>f_src/diegrd_I.F90</itemPath>
+      <itemPath>f_src/dielen_I.F90</itemPath>
+      <itemPath>f_src/digit.F90</itemPath>
+      <itemPath>f_src/digit_I.F90</itemPath>
+      <itemPath>f_src/dihed.F90</itemPath>
+      <itemPath>f_src/dihed_I.F90</itemPath>
+      <itemPath>f_src/dijkl1.F90</itemPath>
+      <itemPath>f_src/dijkl1_I.F90</itemPath>
+      <itemPath>f_src/dijkl2.F90</itemPath>
+      <itemPath>f_src/dijkl2_I.F90</itemPath>
+      <itemPath>f_src/dijkld_I.F90</itemPath>
+      <itemPath>f_src/dimens.F90</itemPath>
+      <itemPath>f_src/dimens_I.F90</itemPath>
+      <itemPath>f_src/dipole_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/disp_DnX.F90</itemPath>
+      <itemPath>f_src/dist2.F90</itemPath>
+      <itemPath>f_src/dist2_I.F90</itemPath>
+      <itemPath>f_src/dmecip_I.F90</itemPath>
+      <itemPath>f_src/dnrm2_I.F90</itemPath>
+      <itemPath>f_src/dofs.F90</itemPath>
+      <itemPath>f_src/dofs_I.F90</itemPath>
+      <itemPath>f_src/dopen_I.F90</itemPath>
+      <itemPath>f_src/dot.F90</itemPath>
+      <itemPath>f_src/dot_I.F90</itemPath>
+      <itemPath>f_src/drc.F90</itemPath>
+      <itemPath>f_src/drc_I.F90</itemPath>
+      <itemPath>f_src/drcout.F90</itemPath>
+      <itemPath>f_src/drcout_I.F90</itemPath>
+      <itemPath>f_src/drepp2_I.F90</itemPath>
+      <itemPath>f_src/drotat_I.F90</itemPath>
+      <itemPath>f_src/dsum_I.F90</itemPath>
+      <itemPath>f_src/dtran2.F90</itemPath>
+      <itemPath>f_src/dtran2_I.F90</itemPath>
+      <itemPath>f_src/dtrans.F90</itemPath>
+      <itemPath>f_src/dtrmm_I.F90</itemPath>
+      <itemPath>f_src/dtrmv_I.F90</itemPath>
+      <itemPath>f_src/dtrti2_I.F90</itemPath>
+      <itemPath>f_src/dvfill_I.F90</itemPath>
+      <itemPath>f_src/ef_C.F90</itemPath>
+      <itemPath>f_src/eigen.F90</itemPath>
+      <itemPath>f_src/eigenvectors_LAPACK.F90</itemPath>
+      <itemPath>f_src/eimp.F90</itemPath>
+      <itemPath>f_src/einvit_I.F90</itemPath>
+      <itemPath>f_src/eiscor_I.F90</itemPath>
+      <itemPath>f_src/elau_I.F90</itemPath>
+      <itemPath>f_src/elemts_C.F90</itemPath>
+      <itemPath>f_src/elenuc_I.F90</itemPath>
+      <itemPath>f_src/elesn_I.F90</itemPath>
+      <itemPath>f_src/en_I.F90</itemPath>
+      <itemPath>f_src/enpart.F90</itemPath>
+      <itemPath>f_src/enpart_I.F90</itemPath>
+      <itemPath>f_src/epsab_I.F90</itemPath>
+      <itemPath>f_src/epseta.F90</itemPath>
+      <itemPath>f_src/epseta_I.F90</itemPath>
+      <itemPath>f_src/epslon_I.F90</itemPath>
+      <itemPath>f_src/eqlrat_I.F90</itemPath>
+      <itemPath>f_src/esn_I.F90</itemPath>
+      <itemPath>f_src/esp.F90</itemPath>
+      <itemPath>f_src/esp1_I.F90</itemPath>
+      <itemPath>f_src/esp_C.F90</itemPath>
+      <itemPath>f_src/esp_utilities.F90</itemPath>
+      <itemPath>f_src/espfit_I.F90</itemPath>
+      <itemPath>f_src/estpi1_I.F90</itemPath>
+      <itemPath>f_src/etime_I.F90</itemPath>
+      <itemPath>f_src/etrbk3_I.F90</itemPath>
+      <itemPath>f_src/etred3_I.F90</itemPath>
+      <itemPath>f_src/euler_C.F90</itemPath>
+      <itemPath>f_src/evvrsp_I.F90</itemPath>
+      <itemPath>f_src/exchng.F90</itemPath>
+      <itemPath>f_src/exchng_I.F90</itemPath>
+      <itemPath>f_src/fbx_I.F90</itemPath>
+      <itemPath>f_src/fcnpp_I.F90</itemPath>
+      <itemPath>f_src/ffreq1_I.F90</itemPath>
+      <itemPath>f_src/ffreq2_I.F90</itemPath>
+      <itemPath>f_src/fhpatn_I.F90</itemPath>
+      <itemPath>f_src/fillij.F90</itemPath>
+      <itemPath>f_src/findn1.F90</itemPath>
+      <itemPath>f_src/finish.F90</itemPath>
+      <itemPath>f_src/flepo.F90</itemPath>
+      <itemPath>f_src/flepo_I.F90</itemPath>
+      <itemPath>f_src/fmat.F90</itemPath>
+      <itemPath>f_src/fock1.F90</itemPath>
+      <itemPath>f_src/fock1_I.F90</itemPath>
+      <itemPath>f_src/fock1_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/fock2.F90</itemPath>
+      <itemPath>f_src/fock2_I.F90</itemPath>
+      <itemPath>f_src/fock2z.F90</itemPath>
+      <itemPath>f_src/fockd2_I.F90</itemPath>
+      <itemPath>f_src/fordd_I.F90</itemPath>
+      <itemPath>f_src/formxy.F90</itemPath>
+      <itemPath>f_src/formxy_I.F90</itemPath>
+      <itemPath>f_src/forsav.F90</itemPath>
+      <itemPath>f_src/frame.F90</itemPath>
+      <itemPath>f_src/frame_I.F90</itemPath>
+      <itemPath>f_src/freda_I.F90</itemPath>
+      <itemPath>f_src/fsub_I.F90</itemPath>
+      <itemPath>f_src/funcon_C.F90</itemPath>
+      <itemPath>f_src/genun.F90</itemPath>
+      <itemPath>f_src/genun_I.F90</itemPath>
+      <itemPath>f_src/genvec_I.F90</itemPath>
+      <itemPath>f_src/geochk.F90</itemPath>
+      <itemPath>f_src/getdat.F90</itemPath>
+      <itemPath>f_src/getgeg.F90</itemPath>
+      <itemPath>f_src/getgeg_I.F90</itemPath>
+      <itemPath>f_src/getgeo.F90</itemPath>
+      <itemPath>f_src/getgeo_I.F90</itemPath>
+      <itemPath>f_src/getpdb.F90</itemPath>
+      <itemPath>f_src/getsym.F90</itemPath>
+      <itemPath>f_src/getsym_I.F90</itemPath>
+      <itemPath>f_src/gettxt.F90</itemPath>
+      <itemPath>f_src/gettxt_I.F90</itemPath>
+      <itemPath>f_src/getval.F90</itemPath>
+      <itemPath>f_src/getval_I.F90</itemPath>
+      <itemPath>f_src/gmetry.F90</itemPath>
+      <itemPath>f_src/gmetry_I.F90</itemPath>
+      <itemPath>f_src/gover_I.F90</itemPath>
+      <itemPath>f_src/greek.F90</itemPath>
+      <itemPath>f_src/grids_I.F90</itemPath>
+      <itemPath>f_src/gstore_I.F90</itemPath>
+      <itemPath>f_src/h1elec.F90</itemPath>
+      <itemPath>f_src/h1elec_I.F90</itemPath>
+      <itemPath>f_src/haddon_I.F90</itemPath>
+      <itemPath>f_src/hbonds.F90</itemPath>
+      <itemPath>f_src/hcore.F90</itemPath>
+      <itemPath>f_src/hcore_I.F90</itemPath>
+      <itemPath>f_src/hcore_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/hcored_I.F90</itemPath>
+      <itemPath>f_src/helect.F90</itemPath>
+      <itemPath>f_src/helect_I.F90</itemPath>
+      <itemPath>f_src/helecz.F90</itemPath>
+      <itemPath>f_src/hmuf_I.F90</itemPath>
+      <itemPath>f_src/hplusf_I.F90</itemPath>
+      <itemPath>f_src/hybrid.F90</itemPath>
+      <itemPath>f_src/ijbo.F90</itemPath>
+      <itemPath>f_src/inid_I.F90</itemPath>
+      <itemPath>f_src/inighd_I.F90</itemPath>
+      <itemPath>f_src/init_filenames.F90</itemPath>
+      <itemPath>f_src/initsn_I.F90</itemPath>
+      <itemPath>f_src/initsv_I.F90</itemPath>
+      <itemPath>f_src/insymc_I.F90</itemPath>
+      <itemPath>f_src/interp.F90</itemPath>
+      <itemPath>f_src/interp_I.F90</itemPath>
+      <itemPath>f_src/ionout.F90</itemPath>
+      <itemPath>f_src/ird_I.F90</itemPath>
+      <itemPath>f_src/isitsc.F90</itemPath>
+      <itemPath>f_src/iten_I.F90</itemPath>
+      <itemPath>f_src/iter_C.F90</itemPath>
+      <itemPath>f_src/iter_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/jab.F90</itemPath>
+      <itemPath>f_src/jab_I.F90</itemPath>
+      <itemPath>f_src/jab_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/jcarin.F90</itemPath>
+      <itemPath>f_src/jcarin_I.F90</itemPath>
+      <itemPath>f_src/jdate.F90</itemPath>
+      <itemPath>f_src/journal_references_C.F90</itemPath>
+      <itemPath>f_src/kab.F90</itemPath>
+      <itemPath>f_src/kab_I.F90</itemPath>
+      <itemPath>f_src/kab_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/lbfgs.F90</itemPath>
+      <itemPath>f_src/lewis.F90</itemPath>
+      <itemPath>f_src/ligand.F90</itemPath>
+      <itemPath>f_src/linear_cosmo.F90</itemPath>
+      <itemPath>f_src/linmin.F90</itemPath>
+      <itemPath>f_src/linmin_I.F90</itemPath>
+      <itemPath>f_src/linpack.F90</itemPath>
+      <itemPath>f_src/local.F90</itemPath>
+      <itemPath>f_src/local2.F90</itemPath>
+      <itemPath>f_src/local_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/lsame_I.F90</itemPath>
+      <itemPath>f_src/lyse.F90</itemPath>
+      <itemPath>f_src/makeuf_I.F90</itemPath>
+      <itemPath>f_src/makopr_I.F90</itemPath>
+      <itemPath>f_src/maksym.F90</itemPath>
+      <itemPath>f_src/maksym_I.F90</itemPath>
+      <itemPath>f_src/makvec.F90</itemPath>
+      <itemPath>f_src/mamult.F90</itemPath>
+      <itemPath>f_src/mamult_I.F90</itemPath>
+      <itemPath>f_src/mamult_cuda_i.F90</itemPath>
+      <itemPath>f_src/maps_C.F90</itemPath>
+      <itemPath>f_src/mat33.F90</itemPath>
+      <itemPath>f_src/mat33_I.F90</itemPath>
+      <itemPath>f_src/matout.F90</itemPath>
+      <itemPath>f_src/matout_I.F90</itemPath>
+      <itemPath>f_src/mbonds.F90</itemPath>
+      <itemPath>f_src/me08a_I.F90</itemPath>
+      <itemPath>f_src/meci_C.F90</itemPath>
+      <itemPath>f_src/mecid.F90</itemPath>
+      <itemPath>f_src/mecid_I.F90</itemPath>
+      <itemPath>f_src/mecih.F90</itemPath>
+      <itemPath>f_src/mecih_I.F90</itemPath>
+      <itemPath>f_src/mecip.F90</itemPath>
+      <itemPath>f_src/mecip_I.F90</itemPath>
+      <itemPath>f_src/mepchg_I.F90</itemPath>
+      <itemPath>f_src/mepmap_I.F90</itemPath>
+      <itemPath>f_src/meprot_I.F90</itemPath>
+      <itemPath>f_src/minv.F90</itemPath>
+      <itemPath>f_src/minv_I.F90</itemPath>
+      <itemPath>f_src/mlmo.F90</itemPath>
+      <itemPath>f_src/mndod.F90</itemPath>
+      <itemPath>f_src/mndod_C.F90</itemPath>
+      <itemPath>f_src/mod_atomradii.F90</itemPath>
+      <itemPath>f_src/mod_calls_cublas.F90</itemPath>
+      <itemPath>f_src/mod_gpu_info.F90</itemPath>
+      <itemPath>f_src/mod_vars_cuda.F90</itemPath>
+      <itemPath>f_src/modchg.F90</itemPath>
+      <itemPath>f_src/modgra.F90</itemPath>
+      <itemPath>f_src/moldat.F90</itemPath>
+      <itemPath>f_src/molkst_C.F90</itemPath>
+      <itemPath>f_src/molmec_C.F90</itemPath>
+      <itemPath>f_src/molval.F90</itemPath>
+      <itemPath>f_src/molval_I.F90</itemPath>
+      <itemPath>f_src/mopend.F90</itemPath>
+      <itemPath>f_src/mopend_I.F90</itemPath>
+      <itemPath>f_src/mpcbds_I.F90</itemPath>
+      <itemPath>f_src/mpcpop_I.F90</itemPath>
+      <itemPath>f_src/mpcsyb.F90</itemPath>
+      <itemPath>f_src/mtxm.F90</itemPath>
+      <itemPath>f_src/mtxm_I.F90</itemPath>
+      <itemPath>f_src/mtxmc.F90</itemPath>
+      <itemPath>f_src/mtxmc_I.F90</itemPath>
+      <itemPath>f_src/mullik.F90</itemPath>
+      <itemPath>f_src/mullik_I.F90</itemPath>
+      <itemPath>f_src/mult.F90</itemPath>
+      <itemPath>f_src/mult33.F90</itemPath>
+      <itemPath>f_src/mult33_I.F90</itemPath>
+      <itemPath>f_src/mult_I.F90</itemPath>
+      <itemPath>f_src/mxm.F90</itemPath>
+      <itemPath>f_src/mxm_I.F90</itemPath>
+      <itemPath>f_src/mxmt.F90</itemPath>
+      <itemPath>f_src/mxmt_I.F90</itemPath>
+      <itemPath>f_src/mxv.F90</itemPath>
+      <itemPath>f_src/mxv_I.F90</itemPath>
+      <itemPath>f_src/myword.F90</itemPath>
+      <itemPath>f_src/myword_I.F90</itemPath>
+      <itemPath>f_src/naican_I.F90</itemPath>
+      <itemPath>f_src/naicas_I.F90</itemPath>
+      <itemPath>f_src/names.F90</itemPath>
+      <itemPath>f_src/new_esp.F90</itemPath>
+      <itemPath>f_src/newflg.F90</itemPath>
+      <itemPath>f_src/ngamtg_I.F90</itemPath>
+      <itemPath>f_src/ngefis_I.F90</itemPath>
+      <itemPath>f_src/ngidri_I.F90</itemPath>
+      <itemPath>f_src/ngoke_I.F90</itemPath>
+      <itemPath>f_src/nllsn_I.F90</itemPath>
+      <itemPath>f_src/nonbet_I.F90</itemPath>
+      <itemPath>f_src/nonope_I.F90</itemPath>
+      <itemPath>f_src/nonor_I.F90</itemPath>
+      <itemPath>f_src/nuchar.F90</itemPath>
+      <itemPath>f_src/nuchar_I.F90</itemPath>
+      <itemPath>f_src/nxtmer.F90</itemPath>
+      <itemPath>f_src/openda_I.F90</itemPath>
+      <itemPath>f_src/orient_I.F90</itemPath>
+      <itemPath>f_src/osinv.F90</itemPath>
+      <itemPath>f_src/osinv_I.F90</itemPath>
+      <itemPath>f_src/outer1.F90</itemPath>
+      <itemPath>f_src/outer2.F90</itemPath>
+      <itemPath>f_src/overlaps_C.F90</itemPath>
+      <itemPath>f_src/ovlp_I.F90</itemPath>
+      <itemPath>f_src/packp_I.F90</itemPath>
+      <itemPath>f_src/parameters_C.F90</itemPath>
+      <itemPath>f_src/parameters_for_PM7_C.F90</itemPath>
+      <itemPath>f_src/parameters_for_PM7_Sparkles_C.F90</itemPath>
+      <itemPath>f_src/parameters_for_PM7_TS_C.F90</itemPath>
+      <itemPath>f_src/partxy.F90</itemPath>
+      <itemPath>f_src/partxy_I.F90</itemPath>
+      <itemPath>f_src/pdgrid_I.F90</itemPath>
+      <itemPath>f_src/perm.F90</itemPath>
+      <itemPath>f_src/perm_I.F90</itemPath>
+      <itemPath>f_src/picopt.F90</itemPath>
+      <itemPath>f_src/pinout.F90</itemPath>
+      <itemPath>f_src/plato_I.F90</itemPath>
+      <itemPath>f_src/pmep.F90</itemPath>
+      <itemPath>f_src/pmep1_I.F90</itemPath>
+      <itemPath>f_src/pmep_I.F90</itemPath>
+      <itemPath>f_src/pmepco_I.F90</itemPath>
+      <itemPath>f_src/poij_I.F90</itemPath>
+      <itemPath>f_src/pol_vol_I.F90</itemPath>
+      <itemPath>f_src/post_scf_corrections.F90</itemPath>
+      <itemPath>f_src/potcal_I.F90</itemPath>
+      <itemPath>f_src/powsav_I.F90</itemPath>
+      <itemPath>f_src/printp_I.F90</itemPath>
+      <itemPath>f_src/prtdrc.F90</itemPath>
+      <itemPath>f_src/prtdrc_I.F90</itemPath>
+      <itemPath>f_src/prtgra.F90</itemPath>
+      <itemPath>f_src/prthco_I.F90</itemPath>
+      <itemPath>f_src/prthes_I.F90</itemPath>
+      <itemPath>f_src/prtlmo.F90</itemPath>
+      <itemPath>f_src/prtpar_I.F90</itemPath>
+      <itemPath>f_src/prttim.F90</itemPath>
+      <itemPath>f_src/prttim_I.F90</itemPath>
+      <itemPath>f_src/pulay.F90</itemPath>
+      <itemPath>f_src/pulay_I.F90</itemPath>
+      <itemPath>f_src/quadr.F90</itemPath>
+      <itemPath>f_src/quadr_I.F90</itemPath>
+      <itemPath>f_src/react1.F90</itemPath>
+      <itemPath>f_src/react1_I.F90</itemPath>
+      <itemPath>f_src/reada.F90</itemPath>
+      <itemPath>f_src/reada_I.F90</itemPath>
+      <itemPath>f_src/redatm_I.F90</itemPath>
+      <itemPath>f_src/refer.F90</itemPath>
+      <itemPath>f_src/refer_I.F90</itemPath>
+      <itemPath>f_src/refkey_C.F90</itemPath>
+      <itemPath>f_src/reorth.F90</itemPath>
+      <itemPath>f_src/repp_I.F90</itemPath>
+      <itemPath>f_src/reppd2_I.F90</itemPath>
+      <itemPath>f_src/reppd_I.F90</itemPath>
+      <itemPath>f_src/reseq.F90</itemPath>
+      <itemPath>f_src/resolv.F90</itemPath>
+      <itemPath>f_src/resolv_I.F90</itemPath>
+      <itemPath>f_src/rijkl_I.F90</itemPath>
+      <itemPath>f_src/rotat_I.F90</itemPath>
+      <itemPath>f_src/rotatd_I.F90</itemPath>
+      <itemPath>f_src/rotate.F90</itemPath>
+      <itemPath>f_src/rotate_C.F90</itemPath>
+      <itemPath>f_src/rotate_I.F90</itemPath>
+      <itemPath>f_src/rotlmo.F90</itemPath>
+      <itemPath>f_src/rotmat_I.F90</itemPath>
+      <itemPath>f_src/rotmol.F90</itemPath>
+      <itemPath>f_src/rotmol_I.F90</itemPath>
+      <itemPath>f_src/rsc_I.F90</itemPath>
+      <itemPath>f_src/rsp.F90</itemPath>
+      <itemPath>f_src/scfcri.F90</itemPath>
+      <itemPath>f_src/schmib.F90</itemPath>
+      <itemPath>f_src/schmib_I.F90</itemPath>
+      <itemPath>f_src/schmit.F90</itemPath>
+      <itemPath>f_src/schmit_I.F90</itemPath>
+      <itemPath>f_src/scprm_I.F90</itemPath>
+      <itemPath>f_src/search_I.F90</itemPath>
+      <itemPath>f_src/second.F90</itemPath>
+      <itemPath>f_src/second_I.F90</itemPath>
+      <itemPath>f_src/selmos.F90</itemPath>
+      <itemPath>f_src/set.F90</itemPath>
+      <itemPath>f_src/set_I.F90</itemPath>
+      <itemPath>f_src/set_up_MOZYME_arrays.F90</itemPath>
+      <itemPath>f_src/set_up_RAPID.F90</itemPath>
+      <itemPath>f_src/set_up_dentate.F90</itemPath>
+      <itemPath>f_src/setup3_I.F90</itemPath>
+      <itemPath>f_src/setup_mopac_arrays.F90</itemPath>
+      <itemPath>f_src/setupg.F90</itemPath>
+      <itemPath>f_src/setupk.F90</itemPath>
+      <itemPath>f_src/solrot.F90</itemPath>
+      <itemPath>f_src/solrot_I.F90</itemPath>
+      <itemPath>f_src/sort.F90</itemPath>
+      <itemPath>f_src/sort_I.F90</itemPath>
+      <itemPath>f_src/sp_two_electron.F90</itemPath>
+      <itemPath>f_src/spcore_I.F90</itemPath>
+      <itemPath>f_src/spline_I.F90</itemPath>
+      <itemPath>f_src/ss_I.F90</itemPath>
+      <itemPath>f_src/suma2_I.F90</itemPath>
+      <itemPath>f_src/supdot.F90</itemPath>
+      <itemPath>f_src/supdot_I.F90</itemPath>
+      <itemPath>f_src/superd.F90</itemPath>
+      <itemPath>f_src/superd_I.F90</itemPath>
+      <itemPath>f_src/surfa_I.F90</itemPath>
+      <itemPath>f_src/surfac_I.F90</itemPath>
+      <itemPath>f_src/swap.F90</itemPath>
+      <itemPath>f_src/swap_I.F90</itemPath>
+      <itemPath>f_src/switch.F90</itemPath>
+      <itemPath>f_src/symdec_I.F90</itemPath>
+      <itemPath>f_src/symh.F90</itemPath>
+      <itemPath>f_src/symh_I.F90</itemPath>
+      <itemPath>f_src/symmetry_C.F90</itemPath>
+      <itemPath>f_src/symopr.F90</itemPath>
+      <itemPath>f_src/symopr_I.F90</itemPath>
+      <itemPath>f_src/symp_I.F90</itemPath>
+      <itemPath>f_src/sympop.F90</itemPath>
+      <itemPath>f_src/sympop_I.F90</itemPath>
+      <itemPath>f_src/symr.F90</itemPath>
+      <itemPath>f_src/symr_I.F90</itemPath>
+      <itemPath>f_src/symt.F90</itemPath>
+      <itemPath>f_src/symt_I.F90</itemPath>
+      <itemPath>f_src/symtry.F90</itemPath>
+      <itemPath>f_src/symtry_I.F90</itemPath>
+      <itemPath>f_src/tf_I.F90</itemPath>
+      <itemPath>f_src/tidy.F90</itemPath>
+      <itemPath>f_src/time_I.F90</itemPath>
+      <itemPath>f_src/timer.F90</itemPath>
+      <itemPath>f_src/timer_I.F90</itemPath>
+      <itemPath>f_src/timout.F90</itemPath>
+      <itemPath>f_src/transf_I.F90</itemPath>
+      <itemPath>f_src/trsub_I.F90</itemPath>
+      <itemPath>f_src/trudgu_I.F90</itemPath>
+      <itemPath>f_src/trugdu_I.F90</itemPath>
+      <itemPath>f_src/trugud_I.F90</itemPath>
+      <itemPath>f_src/tx_I.F90</itemPath>
+      <itemPath>f_src/txtype.F90</itemPath>
+      <itemPath>f_src/upcase.F90</itemPath>
+      <itemPath>f_src/upcase_I.F90</itemPath>
+      <itemPath>f_src/update.F90</itemPath>
+      <itemPath>f_src/update_I.F90</itemPath>
+      <itemPath>f_src/values.F90</itemPath>
+      <itemPath>f_src/vastkind.F90</itemPath>
+      <itemPath>f_src/vecprt.F90</itemPath>
+      <itemPath>f_src/vecprt_I.F90</itemPath>
+      <itemPath>f_src/vecprt_for_MOZYME.F90</itemPath>
+      <itemPath>f_src/volume.F90</itemPath>
+      <itemPath>f_src/volume_I.F90</itemPath>
+      <itemPath>f_src/w2mat_I.F90</itemPath>
+      <itemPath>f_src/worder_I.F90</itemPath>
+      <itemPath>f_src/wrdkey_I.F90</itemPath>
+      <itemPath>f_src/wrtkey.F90</itemPath>
+      <itemPath>f_src/wrtkey_I.F90</itemPath>
+      <itemPath>f_src/wrttxt.F90</itemPath>
+      <itemPath>f_src/wrttxt_I.F90</itemPath>
+      <itemPath>f_src/wstore_I.F90</itemPath>
+      <itemPath>f_src/xyzcry.F90</itemPath>
+      <itemPath>f_src/xyzcry_I.F90</itemPath>
+      <itemPath>f_src/xyzint.F90</itemPath>
+      <itemPath>f_src/xyzint_I.F90</itemPath>
+      <itemPath>f_src/zerom_I.F90</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>f_src</Elem>
+    <Elem>c_src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>icx</commandlineTool>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -fopenmp -lpthread -lm</commandLine>
+        </cTool>
+        <ccTool>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -fopenmp -lpthread -lm</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <commandlineTool>ifort</commandlineTool>
+          <commandLine>-lpthread -lstdc++ -I/${OBJECTDIR} -module ${OBJECTDIR} -fPIE</commandLine>
+        </fortranCompilerTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="c_src/compfg.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <additionalDep>${OBJECTDIR}/f_src/chanel_C.o ${OBJECTDIR}/f_src/Common_arrays_C.o ${OBJECTDIR}/f_src/cosmo_C.o ${OBJECTDIR}/f_src/deriv_I.o ${OBJECTDIR}/f_src/dihed_I.o ${OBJECTDIR}/f_src/dot_I.o ${OBJECTDIR}/f_src/elemts_C.o ${OBJECTDIR}/f_src/funcon_C.o ${OBJECTDIR}/f_src/gmetry_I.o ${OBJECTDIR}/f_src/hcore_I.o ${OBJECTDIR}/f_src/mecip_I.o ${OBJECTDIR}/f_src/molkst_C.o ${OBJECTDIR}/f_src/molmec_C.o ${OBJECTDIR}/f_src/prtpar_I.o ${OBJECTDIR}/f_src/symtry_I.o ${OBJECTDIR}/f_src/timer_I.o ${OBJECTDIR}/f_src/vastkind.o ${OBJECTDIR}/f_src/volume_I.o ${OBJECTDIR}/f_src/linear_cosmo.o</additionalDep>
+        </cTool>
+      </item>
+      <item path="c_src/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="c_src/fock2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/fockdorbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/getdat.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <additionalDep>${OBJECTDIR}/f_src/chanel_C.o ${OBJECTDIR}/f_src/Common_arrays_C.o ${OBJECTDIR}/f_src/molkst_C.o ${OBJECTDIR}/f_src/mopend_I.o</additionalDep>
+        </cTool>
+      </item>
+      <item path="c_src/gettxt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/helect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/mopac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/readmo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/run_mopac.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <additionalDep>${OBJECTDIR}/f_src/calpar_I.o ${OBJECTDIR}/f_src/moldat.o ${OBJECTDIR}/f_src/geochk.o ${OBJECTDIR}/f_src/chanel_C.o ${OBJECTDIR}/f_src/Common_arrays_C.o ${OBJECTDIR}/f_src/compfg_I.o ${OBJECTDIR}/f_src/cosmo_C.o ${OBJECTDIR}/f_src/datin_I.o ${OBJECTDIR}/f_src/drc_I.o ${OBJECTDIR}/f_src/fbx_I.o ${OBJECTDIR}/f_src/flepo_I.o ${OBJECTDIR}/f_src/fordd_I.o ${OBJECTDIR}/f_src/funcon_C.o ${OBJECTDIR}/f_src/maps_C.o ${OBJECTDIR}/f_src/molkst_C.o ${OBJECTDIR}/f_src/parameters_C.o ${OBJECTDIR}/f_src/pmep_I.o ${OBJECTDIR}/f_src/react1_I.o ${OBJECTDIR}/f_src/second_I.o ${OBJECTDIR}/f_src/symmetry_C.o ${OBJECTDIR}/f_src/vastkind.o ${OBJECTDIR}/f_src/parameters_for_PM7_Sparkles_C.o ${OBJECTDIR}/f_src/wrttxt_I.o</additionalDep>
+        </cTool>
+      </item>
+      <item path="f_src/Common_arrays_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_EC_plus_ER.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_EH_plus.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_PM6_DH_Dispersion.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_PM6_DH_type.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_bits.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/H_bonds4.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/MOZYME_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aababc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aababc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabacd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabacd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabbcd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabbcd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/add_more_interactions.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addfck_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addhb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addhcr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addnuc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/adjvec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/afmm_mod.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aintgs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/alphaf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/analyt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/analyt_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/anavib.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/asum_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/atomrs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbbc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbbc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbcd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbcd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bangle.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bangle_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bfn.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bfn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bintgs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/blas_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/buildf.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/calpar.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/calpar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ccprod_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ccrep.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cdiag_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chanel_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/charg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/check.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chkion.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chklew.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvgz.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/coe.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/coe_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/collid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/collis_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/compct.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/compfg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/conref_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/convert_storage.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cosmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cosmo_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dang.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dang_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/datin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/datin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/daxpy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dcart.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dcart_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ddot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ddpo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delmol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delsta.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/densit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_cuda_i.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_for_GPU.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri0.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri0_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri21.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri21_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri22.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri22_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri23.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri23_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deritr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deritr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deriv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deriv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dernvo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dernvo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ders_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dex2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfield.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfield_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfock2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfock2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfport.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfpsav.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfpsav_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dftd3_bits.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dgefa_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dgetri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhcore.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag_for_GPU.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagi.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagi_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diegrd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dielen_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/digit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/digit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dihed.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dihed_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkld_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dimens.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dimens_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dipole_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/disp_DnX.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dist2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dist2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dmecip_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dnrm2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dofs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dofs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dopen_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drcout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drcout_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drepp2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drotat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dsum_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtran2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtran2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrans.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrmm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrmv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrti2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dvfill_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ef_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eigen.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eigenvectors_LAPACK.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eimp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/einvit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eiscor_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elau_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elemts_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elenuc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elesn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/en_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/enpart.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/enpart_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epsab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epseta.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epseta_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epslon_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eqlrat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp_utilities.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/espfit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/estpi1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etime_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etrbk3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etred3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/euler_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/evvrsp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/exchng.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/exchng_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fbx_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fcnpp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ffreq1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ffreq2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fhpatn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fillij.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/findn1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/finish.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/flepo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/flepo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fmat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2z.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fockd2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fordd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/formxy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/formxy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/forsav.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/frame.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/frame_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/freda_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fsub_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/funcon_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genun.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genun_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genvec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/geochk.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getdat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getpdb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getsym.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getsym_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gettxt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gettxt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getval.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gmetry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gmetry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gover_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/greek.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/grids_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gstore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/h1elec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/h1elec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/haddon_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hbonds.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcored_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helect.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helect_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helecz.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hmuf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hplusf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hybrid.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ijbo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/inid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/inighd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/init_filenames.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/initsn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/initsv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/insymc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/interp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/interp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ionout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ird_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/isitsc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iten_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iter_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iter_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jcarin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jcarin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jdate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/journal_references_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lbfgs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lewis.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ligand.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linear_cosmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linmin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linmin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linpack.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lsame_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lyse.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makeuf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makopr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maksym.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maksym_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makvec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult_cuda_i.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maps_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mat33.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mat33_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/matout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/matout_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mbonds.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/me08a_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/meci_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecid.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecih.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecih_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecip.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecip_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mepchg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mepmap_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/meprot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/minv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/minv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mndod.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mndod_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_atomradii.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_calls_cublas.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_gpu_info.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_vars_cuda.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/modchg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/modgra.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/moldat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molkst_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molmec_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molval.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mopend.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mopend_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcbds_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcpop_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcsyb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxmc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxmc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mullik.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mullik_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult33.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult33_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxmt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxmt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/myword.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/myword_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/naican_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/naicas_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/names.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/new_esp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/newflg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngamtg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngefis_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngidri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngoke_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nllsn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonbet_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonope_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonor_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nuchar.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nuchar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nxtmer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/openda_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/orient_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/osinv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/osinv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/outer1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/outer2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/overlaps_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ovlp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/packp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_Sparkles_C.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_TS_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/partxy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/partxy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pdgrid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/perm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/perm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/picopt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pinout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/plato_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmepco_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/poij_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pol_vol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/post_scf_corrections.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/potcal_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/powsav_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/printp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtdrc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtdrc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtgra.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prthco_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prthes_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtpar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prttim.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prttim_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pulay.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pulay_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/quadr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/quadr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/react1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/react1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reada.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reada_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/redatm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refer_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refkey_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reorth.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/repp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reppd2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reppd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reseq.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/resolv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/resolv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rijkl_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotatd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmol.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rsc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rsp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/scfcri.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmib.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmib_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/scprm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/search_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/second.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/second_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/selmos.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_MOZYME_arrays.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_RAPID.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_dentate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setup3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setup_mopac_arrays.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setupg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setupk.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/solrot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/solrot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sort.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sort_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sp_two_electron.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/spcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/spline_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ss_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/suma2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/supdot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/supdot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/superd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/superd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/surfa_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/surfac_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/swap.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/swap_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/switch.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symdec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symh.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symh_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symmetry_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symopr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symopr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sympop.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sympop_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symtry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symtry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tidy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/time_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timer_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/transf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trsub_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trudgu_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trugdu_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trugud_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tx_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/txtype.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/upcase.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/upcase_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/update.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/update_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/values.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vastkind.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/volume.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/volume_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/w2mat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/worder_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrdkey_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrtkey.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrtkey_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrttxt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrttxt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wstore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzcry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzcry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzint.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzint_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/zerom_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>icx</commandlineTool>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>icx</commandlineTool>
+          <commandLine>-lifcore -Wl,--start-group $(MKLROOT)/lib/intel64/libmkl_intel_lp64.a $(MKLROOT)/lib/intel64/libmkl_intel_thread.a $(MKLROOT)/lib/intel64/libmkl_core.a -Wl,--end-group -qopenmp -lpthread -lm</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>ifort</commandlineTool>
+          <commandLine>-lpthread -lstdc++ -I/${OBJECTDIR} -module ${OBJECTDIR} -fPIE</commandLine>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="c_src/compfg.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <additionalDep>${OBJECTDIR}/f_src/chanel_C.o ${OBJECTDIR}/f_src/Common_arrays_C.o ${OBJECTDIR}/f_src/cosmo_C.o ${OBJECTDIR}/f_src/deriv_I.o ${OBJECTDIR}/f_src/dihed_I.o ${OBJECTDIR}/f_src/dot_I.o ${OBJECTDIR}/f_src/elemts_C.o ${OBJECTDIR}/f_src/funcon_C.o ${OBJECTDIR}/f_src/gmetry_I.o ${OBJECTDIR}/f_src/hcore_I.o ${OBJECTDIR}/f_src/mecip_I.o ${OBJECTDIR}/f_src/molkst_C.o ${OBJECTDIR}/f_src/molmec_C.o ${OBJECTDIR}/f_src/prtpar_I.o ${OBJECTDIR}/f_src/symtry_I.o ${OBJECTDIR}/f_src/timer_I.o ${OBJECTDIR}/f_src/vastkind.o ${OBJECTDIR}/f_src/volume_I.o ${OBJECTDIR}/f_src/linear_cosmo.o</additionalDep>
+        </cTool>
+      </item>
+      <item path="c_src/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="c_src/fock2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/fockdorbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/getdat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/gettxt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/helect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/mopac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/readmo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="c_src/run_mopac.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <additionalDep>${OBJECTDIR}/f_src/calpar_I.o ${OBJECTDIR}/f_src/moldat.o ${OBJECTDIR}/f_src/chanel_C.o ${OBJECTDIR}/f_src/geochk.o ${OBJECTDIR}/f_src/Common_arrays_C.o ${OBJECTDIR}/f_src/compfg_I.o ${OBJECTDIR}/f_src/cosmo_C.o ${OBJECTDIR}/f_src/datin_I.o ${OBJECTDIR}/f_src/drc_I.o ${OBJECTDIR}/f_src/fbx_I.o ${OBJECTDIR}/f_src/flepo_I.o ${OBJECTDIR}/f_src/fordd_I.o ${OBJECTDIR}/f_src/funcon_C.o ${OBJECTDIR}/f_src/maps_C.o ${OBJECTDIR}/f_src/molkst_C.o ${OBJECTDIR}/f_src/parameters_C.o ${OBJECTDIR}/f_src/pmep_I.o ${OBJECTDIR}/f_src/react1_I.o ${OBJECTDIR}/f_src/second_I.o ${OBJECTDIR}/f_src/symmetry_C.o ${OBJECTDIR}/f_src/vastkind.o ${OBJECTDIR}/f_src/parameters_for_PM7_Sparkles_C.o ${OBJECTDIR}/f_src/wrttxt_I.o</additionalDep>
+        </cTool>
+      </item>
+      <item path="f_src/Common_arrays_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_EC_plus_ER.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_EH_plus.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_PM6_DH_Dispersion.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_PM6_DH_type.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/H_bond_correction_bits.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/H_bonds4.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/MOZYME_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aababc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aababc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabacd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabacd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabbcd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aabbcd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/add_more_interactions.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addfck_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addhb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addhcr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/addnuc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/adjvec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/afmm_mod.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aintgs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/alphaf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/analyt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/analyt_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/anavib.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/asum_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/atomrs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/aval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbbc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbbc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbcd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/babbcd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bangle.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bangle_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bfn.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bfn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/bintgs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/blas_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/buildf.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/calpar.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/calpar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ccprod_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ccrep.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cdiag_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chanel_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/charg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/check.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chkion.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chklew.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/chrge_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cnvgz.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/coe.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/coe_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/collid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/collis_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/compct.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/compfg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/conref_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/convert_storage.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cosmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/cosmo_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dang.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dang_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/datin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/datin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/daxpy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dcart.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dcart_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ddot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ddpo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delmol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/delsta.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/densit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_cuda_i.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_for_GPU.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/density_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri0.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri0_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri21.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri21_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri22.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri22_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri23.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri23_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deri2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deritr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deritr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deriv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/deriv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dernvo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dernvo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ders_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dex2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfield.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfield_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfock2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfock2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfport.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfpsav.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dfpsav_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dftd3_bits.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dgefa_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dgetri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhcore.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dhcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diag_for_GPU.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagg2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagi.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diagi_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/diegrd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dielen_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/digit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/digit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dihed.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dihed_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkl2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dijkld_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dimens.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dimens_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dipole_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/disp_DnX.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dist2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dist2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dmecip_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dnrm2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dofs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dofs_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dopen_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drcout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drcout_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drepp2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/drotat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dsum_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtran2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtran2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrans.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrmm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrmv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dtrti2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/dvfill_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ef_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eigen.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eigenvectors_LAPACK.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eimp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/einvit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eiscor_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elau_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elemts_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elenuc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/elesn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/en_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/enpart.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/enpart_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epsab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epseta.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epseta_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/epslon_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/eqlrat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/esp_utilities.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/espfit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/estpi1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etime_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etrbk3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/etred3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/euler_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/evvrsp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/exchng.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/exchng_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fbx_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fcnpp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ffreq1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ffreq2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fhpatn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fillij.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/findn1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/finish.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/flepo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/flepo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fmat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock1_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fock2z.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fockd2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fordd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/formxy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/formxy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/forsav.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/frame.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/frame_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/freda_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/fsub_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/funcon_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genun.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genun_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/genvec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/geochk.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getdat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getgeo_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getpdb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getsym.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getsym_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gettxt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gettxt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getval.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/getval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gmetry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gmetry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gover_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/greek.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/grids_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/gstore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/h1elec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/h1elec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/haddon_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hbonds.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcore_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hcored_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helect.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helect_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/helecz.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hmuf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hplusf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/hybrid.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ijbo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/inid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/inighd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/init_filenames.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/initsn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/initsv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/insymc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/interp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/interp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ionout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ird_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/isitsc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iten_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iter_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/iter_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jab_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jcarin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jcarin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/jdate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/journal_references_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/kab_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lbfgs.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lewis.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ligand.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linear_cosmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linmin.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linmin_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/linpack.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/local_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lsame_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/lyse.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makeuf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makopr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maksym.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maksym_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/makvec.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mamult_cuda_i.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/maps_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mat33.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mat33_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/matout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/matout_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mbonds.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/me08a_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/meci_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecid.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecih.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecih_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecip.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mecip_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mepchg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mepmap_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/meprot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/minv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/minv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mndod.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mndod_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_atomradii.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_calls_cublas.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_gpu_info.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mod_vars_cuda.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/modchg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/modgra.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/moldat.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molkst_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molmec_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molval.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/molval_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mopend.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mopend_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcbds_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcpop_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mpcsyb.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxmc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mtxmc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mullik.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mullik_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult33.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult33_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mult_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxmt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxmt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/mxv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/myword.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/myword_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/naican_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/naicas_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/names.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/new_esp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/newflg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngamtg_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngefis_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngidri_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ngoke_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nllsn_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonbet_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonope_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nonor_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nuchar.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nuchar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/nxtmer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/openda_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/orient_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/osinv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/osinv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/outer1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/outer2.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/overlaps_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ovlp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/packp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_Sparkles_C.F90"
+            ex="false"
+            tool="2"
+            flavor2="0">
+      </item>
+      <item path="f_src/parameters_for_PM7_TS_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/partxy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/partxy_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pdgrid_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/perm.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/perm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/picopt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pinout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/plato_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmep_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pmepco_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/poij_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pol_vol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/post_scf_corrections.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/potcal_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/powsav_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/printp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtdrc.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtdrc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtgra.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prthco_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prthes_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prtpar_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prttim.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/prttim_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pulay.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/pulay_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/quadr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/quadr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/react1.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/react1_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reada.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reada_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/redatm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refer_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/refkey_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reorth.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/repp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reppd2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reppd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/reseq.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/resolv.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/resolv_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rijkl_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotatd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotate_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotlmo.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmol.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rotmol_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rsc_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/rsp.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/scfcri.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmib.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmib_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmit.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/schmit_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/scprm_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/search_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/second.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/second_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/selmos.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_MOZYME_arrays.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_RAPID.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/set_up_dentate.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setup3_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setup_mopac_arrays.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setupg.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/setupk.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/solrot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/solrot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sort.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sort_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sp_two_electron.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/spcore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/spline_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/ss_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/suma2_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/supdot.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/supdot_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/superd.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/superd_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/surfa_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/surfac_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/swap.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/swap_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/switch.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symdec_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symh.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symh_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symmetry_C.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symopr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symopr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symp_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sympop.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/sympop_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symr.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symr_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symtry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/symtry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tidy.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/time_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timer.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timer_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/timout.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/transf_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trsub_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trudgu_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trugdu_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/trugud_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/tx_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/txtype.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/upcase.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/upcase_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/update.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/update_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/values.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vastkind.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/vecprt_for_MOZYME.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/volume.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/volume_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/w2mat_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/worder_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrdkey_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrtkey.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrtkey_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrttxt.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wrttxt_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/wstore_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzcry.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzcry_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzint.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/xyzint_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+      <item path="f_src/zerom_I.F90" ex="false" tool="2" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
