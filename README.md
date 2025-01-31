@@ -17,7 +17,13 @@ used for energy estimation.
 
 ## Build
 
-Run `./setup.sh`
+* Activate the Intel compiler environment for `ifort`:
+```
+source /opt/intel/oneapi/setvars.sh
+```
+(skip this if you do not need Hess SE functionality). 
+
+* Run `./setup.sh`, or `./setup-no-se.sh` if you do not need Hess SE functionality.
 
 (Indigo library will be downloaded in the process)
 
