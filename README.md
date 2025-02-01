@@ -1,10 +1,8 @@
 # Hess
 
-Hess is a platform for computational chemistry. This public version of
-the platform provides functionality for empirical molecular docking.
-It uses BFGS for local optimization and two different forms of Monte
-Carlo method for global optimization. The Vinardo scoring function is
-used for energy estimation.
+Hess is a toolkit for computational chemistry. This public version of
+the toolkit provides functionality for empirical and semi-empirical
+molecular docking.
 
 ## Prerequisities
 
