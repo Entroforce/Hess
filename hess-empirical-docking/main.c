@@ -65,7 +65,7 @@ int OptCmdParse(int argc, char *argv[], Opt* params) {
   params->lig = NULL;
   params->out = NULL;
   params->box = NULL;
-  params->optimize = "mc";
+  params->optimize = "mc_metropolis";
 
   params->grid_deriv_flag = 0;
   params->depth = 10000;
@@ -94,7 +94,7 @@ int OptCmdParse(int argc, char *argv[], Opt* params) {
           "--size_y arg                  size in the Y dimension (Angstroms)\n"
           "--size_z arg                  size in the Z dimension (Angstroms)\n"
           "Minimization options:\n"
-          "--optimize arg                parameter for the global search algorithm ('mc' for Monte Carlo optimisation or 'mc_metropolis' for Monte Carlo with Metropolis criterio)\n"
+          "--optimize arg                parameter for the global search algorithm ('mc_metropolis' for Monte Carlo with Metropolis criterio or 'mc' for Monte Carlo optimisation)\n"
           "--top arg                     number of top scores\n"
           "--depth arg                   search depth ( number of LBFGS local search runs)\n"
           "--granularity arg             grid splitting coefficient (the smaller the better the approximation of the estimation function)\n"
@@ -316,7 +316,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
   double result[2] = {0};
-  fprintf(stream, "Version: Dec 27, 2023\n");
+  fprintf(stream, "Version: Sep 23, 2024\n");
   void* opt_molecule = hessMakeOptimizableMolecule(lig_atoms, rec_atoms, box, optimize, granularity, seed);
   if (opt_molecule == NULL) {
     hessDestroy(parser);

@@ -43,7 +43,7 @@ source /opt/intel/oneapi/setvars.sh
 `--size_z arg`                  size in the Z dimension (Angstroms) <br/>
 
 **Minimization options:** <br/>
-`--optimize arg`                global search algorithm variant (`mc` for Monte Carlo optimization or `mc_metropolis` for Monte Carlo with Metropolis criterion) <br/>
+`--optimize arg`                global search algorithm variant (`mc_metropolis` for Monte Carlo with Metropolis criterio or `mc` for Monte Carlo optimisation) <br/>
 `--top arg`                     number of top scored poses stred in the output<br/>
 `--depth arg`                   search depth (number of LBFGS local search runs) <br/>
 `--granularity arg`             grid granularity (the smaller, the better the approximation) <br/>
@@ -60,7 +60,7 @@ source /opt/intel/oneapi/setvars.sh
 
 Go to the `hess-empirical-docking` folder.
 
-`./dist/Release/GNU-Linux/hess-empirical-docking -r protein_example.pdb -l ligand_example.pdb --autobox_ligand crystal_example.pdb --depth 500 --number_of_iterations 40 -o results.sdf`
+`./dist/Release/GNU-Linux/hess-empirical-docking -r ../data/protein_example.pdb -l ../data/ligand_example.pdb --autobox_ligand ../data/crystal_example.pdb --depth 500 --number_of_iterations 40 -o results.sdf`
 
 ## Preparation
 
@@ -72,4 +72,4 @@ hess-preparation `<path to input pdb file>` `<path to output molfile>`
 
 Go to the `hess-preparation` folder.
 
-`./dist/Release/GNU-Linux/hess-preparation molecule_example.pdb prepared_molecule.mol`
+`./dist/Release/GNU-Linux/hess-preparation ../data/molecule_example.pdb prepared_molecule.mol`

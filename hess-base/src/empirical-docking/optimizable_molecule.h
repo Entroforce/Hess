@@ -96,7 +96,7 @@ public:
   const char* scoring = "vinardo";
   bool grid_with_derivs = false;
   int tops_count = 10;
-  string optimize = "mc";
+  string optimize = "mc_metropolis";
   vector<hess::Molecule*> result_mols;
   unsigned seed;
   double ligand_center[3] = {0};
