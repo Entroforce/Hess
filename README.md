@@ -60,7 +60,7 @@ source /opt/intel/oneapi/setvars.sh
 
 Go to the `hess-empirical-docking` folder.
 
-`./dist/Release/GNU-Linux/hess-empirical-docking -r ../data/protein_example.pdb -l ../data/ligand_example.pdb --autobox_ligand ../data/crystal_example.pdb --depth 500 --number_of_iterations 40 -o results.sdf`
+`./dist/Release/GNU-Linux/hess-empirical-docking -r ../data/protein_example.pdb -l ../data/ligand_example.pdb --autobox_ligand ../data/crystal_example.pdb --number_of_iterations 16 -o results.sdf`
 
 ## Preparation
 

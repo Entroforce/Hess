@@ -294,7 +294,7 @@ void parse_pdb(hess::Molecule* molecule, const char* file_name, ifstream& file) 
       if (sbuf.size() > 73) {
         string charge_str = curr_str.substr(78, 2);
         del_tabs(charge_str);
-        std::cout << row_i << " " << charge_str << std::endl;
+//        std::cout << row_i << " " << charge_str << std::endl;
         if (charge_str != "") {
           charge = charge_str[0] - '0';
           if (charge_str[1] == '-') {
@@ -304,8 +304,8 @@ void parse_pdb(hess::Molecule* molecule, const char* file_name, ifstream& file) 
       }
       
       char txtatmi[26] = {0};
-      snprintf(txtatmi, 26, "( %5d %3s %4d)        ", row_i - offset, residue_name.c_str(), res_seq);
-      std::cout << txtatmi << " --- " << residue_name << " " << res_seq << std::endl;
+//      snprintf(txtatmi, 26, "( %5d %3s %4d)        ", row_i - offset, residue_name.c_str(), res_seq);
+//      std::cout << txtatmi << " --- " << residue_name << " " << res_seq << std::endl;
       ((Molecule*) molecule)->txtatm = (char **) realloc(((Molecule*) molecule)->txtatm, (row_i - offset) * sizeof(char *));
       ((Molecule*) molecule)->txtatm[row_i - offset - 1] = (char *) malloc(26 * sizeof(char));
       
