@@ -17,7 +17,6 @@ molecular docking.
 
 ### With Hess SE
 
-* Activate the Intel compiler environment:
 ```
 source /opt/intel/oneapi/setvars.sh
 
@@ -76,7 +75,7 @@ Units are Angstroms.
 
 #### Other
 
-- `--seed arg`                    explicit random seed
+- `--seed arg`:                    explicit random seed
 
 ### Example run
 
@@ -126,7 +125,7 @@ Go to the `hess-se-docking` folder and run the energy calculation for 6MDC compl
 ./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6mdc/6mdc_c_h.pdb -popt n -pout ../data/test-se/6mdc/6mdc_c_h_out.mol
 ```
 
-And then for the ligand and proteing separately:
+And then for the ligand and the protein separately:
 
 ```
 ./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6mdc/6mdc_l_h.pdb -popt n -pout ../data/test-se/6mdc/6mdc_l_h_out.mol
