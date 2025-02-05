@@ -73,3 +73,35 @@ hess-preparation `<path to input pdb file>` `<path to output molfile>`
 Go to the `hess-preparation` folder.
 
 `./dist/Release/GNU-Linux/hess-preparation ../data/molecule_example.pdb prepared_molecule.mol`
+
+## SE docking
+
+### Usage
+
+For non-optimization run:
+
+./hess-se-docking -p `<path to input pdb file>` -popt n -pout `<path to output molfile>`
+
+For optimization run:
+
+./hess-se-docking -p `<path to input pdb file>` -popt y -pout `<path to output molfile>`
+
+### Example
+
+Go to the `hess-se-docking` folder and run for 6MDC complex:
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6mdc/6mdc_c_h.pdb -popt n -pout ../data/test-se/6mdc/6mdc_c_h_out.mol`
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6mdc/6mdc_l_h.pdb -popt n -pout ../data/test-se/6mdc/6mdc_l_h_out.mol`
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6mdc/6mdc_p_h.pdb -popt n -pout ../data/test-se/6mdc/6mdc_p_h_out.mol`
+
+As a result, at each launch the energy of the molecule will be given out; to obtain the binding energy, the energy of the protein and ligand should be subtracted from the energy of the complex.
+
+The same can be done for the 6S9B complex, but now with optimization enabled. Optimizing the protein and complex will take considerable time.
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6s9b/6s9b_c_h.pdb -popt y -pout ../data/test-se/6s9b/6s9b_c_h_out.mol`
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6s9b/6s9b_l_h.pdb -popt y -pout ../data/test-se/6s9b/6s9b_l_h_out.mol`
+
+`./dist/Release/GNU-Linux/hess-se-docking -p ../data/test-se/6s9b/6s9b_p_h.pdb -popt y -pout ../data/test-se/6s9b/6s9b_p_h_out.mol`
