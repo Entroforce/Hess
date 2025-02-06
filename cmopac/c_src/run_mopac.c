@@ -344,6 +344,6 @@ double run_mopac(double *coord, int *labels, char **txtatm_, int natoms_, const 
     double ev_1_in_kcal_mol = 23.060529;
     *escf_ = escf/ev_1_in_kcal_mol;
     end_function();
-    printf("elect: %lf, enuclr: %lf, corrects: %lf, dihed: %lf, solv_energy: %lf \n", elect, enuclr, corrects/ev_1_in_kcal_mol, sum_dihed/ev_1_in_kcal_mol, solv_energy);          
+    printf("Energy terms: \nElectronic energy: %lf eV \nNuclear-nuclear repulsion energy: %lf eV \nCorrects: %lf eV \nDihed: %lf eV \nSolv_energy: %lf eV \n", elect, enuclr, corrects/ev_1_in_kcal_mol, sum_dihed/ev_1_in_kcal_mol, solv_energy);          
     return elect + enuclr + corrects/ev_1_in_kcal_mol + sum_dihed/ev_1_in_kcal_mol + solv_energy;
 }

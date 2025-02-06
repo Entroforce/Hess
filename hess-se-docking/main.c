@@ -22,24 +22,22 @@
 #include <stdlib.h>
 
 typedef struct {
-  char** mol;
-  char** out;
-  char** optimize;
-  int n;
+  char* mol;
+  char* out;
+  char* optimize;
 } SEParams;
 
-
 int SECmdParse(int argc, char *argv[], SEParams* params) {
+
     const char *prot_mol = "-p";
     const char *prot_opt = "-popt";
     const char *prot_out = "-pout";
 
-  params->n = 1;
-  params->mol = (char **) malloc(params->n * sizeof(char *));
-  params->out = (char **) malloc(params->n * sizeof(char *));
-  params->optimize = (char **) malloc(params->n * sizeof(char *));
+    params->mol = NULL;
+    params->out = NULL;
+    params->optimize = "n";
 
-  const char *help_message =
+    const char *help_message =
           "Input:\n"
           "-p arg         path to the molecule, pdb format is used\n"
           "Minimization options:\n"
@@ -47,48 +45,52 @@ int SECmdParse(int argc, char *argv[], SEParams* params) {
           "Output: \n"
           "-pout arg      output molecule file name, sdf format is used\n"
           ;
-  int i = 0;
-  while (i < argc) {
-    const char* curr = argv[i];
-    if (strcmp(curr, "-h") == 0 || strcmp(curr, "--help") == 0) {
-      fprintf(stderr, "%s", help_message);
-      return -1;
+    if(argc <= 1) {
+        fprintf(stderr, "%s\n", help_message);
+        return -1;
     }
+
+    int i = 0;
+    while (i < argc) {
+        const char* curr = argv[i];
+        if (strcmp(curr, "-h") == 0 || strcmp(curr, "--help") == 0) {
+            fprintf(stderr, "%s", help_message);
+            return -1;
+        }
+        if ((strlen(curr) && curr[0] != '-') || (strlen(curr) > 1 && curr[0] != '-' && curr[1] != '-')){
+            i++;
+            continue;
+        }
+        if (strcmp(curr, prot_mol) == 0 && i + 1 < argc){
+            params->mol = strdup(argv[i + 1]);
+            i++;
+        }
+        else if (strcmp(curr, prot_out) == 0 && i + 1 < argc){
+            params->out = strdup(argv[i + 1]);
+            i++;
+        }
+        else if (strcmp(curr, prot_opt) == 0 && i + 1 < argc){
+            params->optimize = strdup(argv[i + 1]);
+            if(strcmp(params->optimize, "y") != 0 && strcmp(params->optimize, "n") != 0 && strcmp(params->optimize, "h") != 0) {
+                fprintf(stderr, "Unrecognized option %s.'\n\nCorrect usage: %s\n\n", params->optimize, help_message);
+                return -1;
+            }
+            i++;
+        }
     
-    if ((strlen(curr) && curr[0] != '-') || (strlen(curr) > 1 && curr[0] != '-' && curr[1] != '-')){
-        i++;
-        continue;
-    }
+        else {
+            fprintf(stderr,
+              "Unrecognized option %s.\n\nCorrect usage: %s\n\n", curr, help_message);
+            return -1;
+        }
     
-    printf("%s\n", curr);
-      
-    if (strcmp(curr, prot_mol) == 0 && i + 1 < argc){
-        params->mol[0] = strdup(argv[i + 1]);
-        i++;
-    }
-      
-    else if (strcmp(curr, prot_out) == 0 && i + 1 < argc){
-        params->out[0] = strdup(argv[i + 1]);
         i++;
     }
 
-    else if (strcmp(curr, prot_opt) == 0 && i + 1 < argc){
-        params->optimize[0] = strdup(argv[i + 1]);
-        if(strcmp(params->optimize[0], "y") != 0 && strcmp(params->optimize[0], "n") != 0 && strcmp(params->optimize[0], "h") != 0) {
-            fprintf(stderr, "Unrecognized option %s.'\n\nCorrect usage: %s\n\n", params->optimize[0], help_message);
-            return -1;
-        }
-        i++;
+    if(params->mol == NULL) {
+        fprintf(stderr, "Specify the path to the pdb file of the molecule");
+        return -1;
     }
-    
-    else {
-      fprintf(stderr,
-              "Unrecognized option %s.\n\nCorrect usage: %s\n\n", curr, help_message);
-      return -1;
-    }
-    
-    i++;
-  }
 
   return 0;
 }
@@ -97,7 +99,6 @@ int main(int argc, char** argv) {
 
     SEParams params;
     if (SECmdParse(argc, argv, &params) != 0) {
-        fprintf(stderr, "%s\n", hessGetLastError());
         return -1;
     }
     
@@ -114,13 +115,13 @@ int main(int argc, char** argv) {
     
     // read mol
     
-    if(strcmp(params.optimize[0], "y") == 0) {
+    if(strcmp(params.optimize, "y") == 0) {
         optModeMol = 1;
-    } else if(strcmp(params.optimize[0], "h") == 0) {
+    } else if(strcmp(params.optimize, "h") == 0) {
         optModeMol = 2;
     }
     
-    void* atomsMol = hessLoadMolecule(parser, params.mol[0]);
+    void* atomsMol = hessLoadMolecule(parser, params.mol);
     if (atomsMol == NULL) {
         hessDestroy(parser);
         fprintf(stderr, "Error reading the receptor file. ");
@@ -137,11 +138,12 @@ int main(int argc, char** argv) {
 
     double energy_mol;
     res = hessSEGetEnergy(se_mol, &energy_mol);
-    printf("mol energy: %f\n", energy_mol);
+    printf("\nMolecule TOTAL ENERGY: %f eV\n", energy_mol);
 
     void *opted_mol;
     res = hessSEGetMol(se_mol, 0, &opted_mol);
-    hessSaveMol(opted_mol, params.out[0]);
+    if(params.out != NULL)
+        hessSaveMol(opted_mol, params.out);
 
     hessDestroy(parser);
     hessDestroy(atomsMol);

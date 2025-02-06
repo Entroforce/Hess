@@ -74,7 +74,9 @@ Go to the `hess-preparation` folder.
 
 `./dist/Release/GNU-Linux/hess-preparation ../data/molecule_example.pdb prepared_molecule.mol`
 
-## SE docking
+## SE program
+
+SE program calculates the energy of a molecule. The program does not include the preparation of the molecule.
 
 ### Usage
 
