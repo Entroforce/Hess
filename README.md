@@ -7,12 +7,15 @@ molecular docking.
 ## Prerequisities
 
 * GNU/Linux operating system.
-* `g++`
-* `make`
-* `libz-dev`
-* `libeigen3-dev`
-* Intel OneAPI toolkit with `icx` and `ifort` compilers (if you need Hess SE)
-
+* Development tools:
+    ``` 
+    sudo apt-get install g++ make libz-dev libeigen3-dev makedepf90 libstdc++-12-dev
+    ```
+* Intel OneAPI toolkit with `icx` and `ifort` compilers (if you need Hess SE):
+    ```
+    sudo apt-get install intel-oneapi-mkl-devel-2022.2.1 intel-oneapi-compiler-fortran-2022.2.1 intel-oneapi-compiler-dpcpp-cpp-2022.2.1 
+    ```
+    
 ## Build
 
 ### With Hess SE
